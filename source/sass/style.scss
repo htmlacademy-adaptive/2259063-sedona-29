@@ -1,1 +1,5 @@
-// Начните писать стили здесь
+// global
+@use "global/global.scss";
+@use "global/mixin.scss";
+@use "global/fonts.scss";
+// blocks
