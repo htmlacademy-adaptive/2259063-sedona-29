@@ -54,7 +54,7 @@ const optimizeImages = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src(['source/img/**/*.{jpg,png,svg}', '!source/img/icons/*.svg'])
     .pipe(gulp.dest('build/img'))
 }
 
@@ -94,7 +94,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
     // 'source/*.ico',
-    // 'manifest.webmanifest',
+    'manifest.webmanifest',
     // 'favicon.ico'
   ], {
     base: 'source'
@@ -136,6 +136,7 @@ const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts))
   gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('source/img/*.{jpg,png,svg}', gulp.series(copyImages, styles, html, reload))
 }
 
 export const build = gulp.series(
