@@ -1,0 +1,34 @@
+.hero {
+  background-image: url("../img/back_desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #766357;
+  min-height: 389px;
+  position: relative;
+  z-index: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back_desktop@2x.jpg");
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("../img/icons/hero_botton_triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 320px;
+    height: 57px;
+    z-index: 1;
+  }
+}
+
+
+
+.hero__title {
+  margin: 90px auto 0 auto;
+}
