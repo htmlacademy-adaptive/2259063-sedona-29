@@ -53,12 +53,12 @@
   cursor: pointer;
 
   &--cross {
-    // background-image: url("../img/stack/sprite.svg#icon_cross");
+    background-image: url("../img/stack/sprite.svg#nav_cross");
     z-index: 1;
   }
 
   &--burger {
-    // background-image: url("../img/stack/sprite.svg#icon_burger");
+    background-image: url("../img/stack/sprite.svg#nav_burger");
   }
 
   &--noscript {
