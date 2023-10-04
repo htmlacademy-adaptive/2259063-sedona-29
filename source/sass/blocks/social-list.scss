@@ -1,0 +1,19 @@
+@use "../global/variables.scss";
+
+.social-list__link {
+  display: block;
+  background-color: variables.$main-color;
+  padding: 12px;
+
+  &:hover {
+    background-color: #669ec0;
+    transition: 0.3s;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    .social-list__logo {
+      opacity: 0.3;
+    }
+  }
+}

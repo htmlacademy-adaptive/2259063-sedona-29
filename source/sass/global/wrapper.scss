@@ -1,3 +1,14 @@
+@use "../global/variables.scss";
+
 .wrapper {
   padding: 0 18px;
+  margin: 0 auto;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0 33px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 0 50px;
+  }
 }

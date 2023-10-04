@@ -100,13 +100,21 @@
 }
 
 .main-nav__item {
-  @media (max-width:767px) {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 767px) {
     &:hover {
-      background-color: #669EC0;
+      transition: 0.3s;
+      background-color: #669ec0;
     }
 
     &:active {
-      background-color: #5496BD;
+      background-color: #5496bd;
+      .main-nav__link {
+        transition: 0.3s;
+        opacity: 0.3;
+      }
     }
   }
 
@@ -156,13 +164,14 @@
   display: block;
   padding: 17px 12px 12px 12px;
 
+  &:active {
+    transition: 0.3s;
+  }
+
   @media (min-width: variables.$screen-tablet) {
     padding: 17px 18px 18px 18px;
     &:hover {
       opacity: 0.6;
-    }
-    &:active {
-      opacity: 0.3;
     }
   }
 
