@@ -30,6 +30,10 @@
   margin: 0 auto;
   display: none;
 
+  @media (min-width: variables.$screen-tablet) {
+    display: block;
+  }
+
   &--closed-menu {
     display: block;
   }
@@ -44,7 +48,7 @@
   border: none;
   width: 22px;
   height: 22px;
-  background-color: #ffffff;
+  background-color: transparent;
   position: absolute;
   top: 17px;
   right: 20px;
