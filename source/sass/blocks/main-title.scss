@@ -1,0 +1,24 @@
+@use "../global/variables.scss";
+
+.main-title {
+  text-align: center;
+  text-wrap: balance;
+}
+
+.main-title__wrapper {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.main-title__title {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-bottom: 35px;
+}
+
+.main-title__description {
+  text-transform: uppercase;
+}

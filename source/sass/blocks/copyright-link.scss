@@ -1,6 +1,10 @@
 @use "../global/variables.scss";
 
 .copyright-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   color: #000000;
   text-transform: uppercase;
 
