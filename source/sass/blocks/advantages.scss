@@ -1,2 +1,9 @@
 @use "../global/variables.scss";
 
+.advantages {
+  background-image: url("../img/advantages_mobile_triangle_top");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  position: relative;
+}
