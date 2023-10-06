@@ -1,0 +1,40 @@
+@use "../global/variables.scss";
+
+.advantages-item {
+  text-align: center;
+  text-transform: uppercase;
+  text-wrap: balance;
+  &--blue {
+    .advantages-item__title,
+    .advantages-item__description {
+      color: #ffffff;
+    }
+  }
+}
+
+.advantages-item .advantages-item__title {
+  &::after {
+    counter-increment: section 1;
+    content: "— №" counter(section) "—";
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.advantages-item__container {
+  background-color: variables.$main-color;
+  padding-top: 52px;
+  padding-bottom: 31px;
+}
+
+.advantages-item__title {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-bottom: 17px;
+}

@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.advantages-list {
+  counter-reset: section 0;
+  background-image: url("../img/advantages_mobile_triangle_top.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto;
+  position: relative;
+  z-index: 1;
+}
