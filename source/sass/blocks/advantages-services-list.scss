@@ -3,11 +3,15 @@
 .advantages-services-list {
   @media (min-width: variables.$screen-tablet) {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px clamp(33px, 7.42vw, 50px);
   }
 }
 
 .advantages-services-list__item {
-  flex-basis: 24.75vw;
+  @media (min-width: variables.$screen-tablet) {
+    flex-basis: clamp(190px, 24.75vw, 300px);
+  }
+
 }

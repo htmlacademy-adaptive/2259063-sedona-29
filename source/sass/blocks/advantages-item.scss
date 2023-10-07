@@ -69,14 +69,17 @@
   padding-top: 23px;
   padding-bottom: 46px;
 
-  // @media (min-width: variables.$screen-tablet) {
-  //   padding-top: 60px;
-  //   padding-bottom: 60px;
-  // }
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 69px;
+    padding-bottom: 69px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
-// .advantages-item__container-with-picture {
-//   @media (min-width: variables.$screen-tablet) {
-//     display: flex;
-//   }
-// }
+
