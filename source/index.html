@@ -69,43 +69,146 @@
         <ul class="advantages__list list advantages-list">
           <!-- №1 ..городок (с дополнительным списком сервиса) -->
           <li class="advantages-list__item advantages-item advantages-item--city advantages-item--blue">
-            <div class="advantages-item__container">
-              <h3 class="advantages-item__title title">Настоящий городок</h3>
-              <p class="advantages-item__description description">Седона не аттракцион для туристов, там&nbsp;течет своя
-                жизнь</p>
+            <div class="advantages-item__container-with-picture container-with-picture">
+              <div class="advantages-item__wrapper advantages-item__wrapper--triangle advantages-item__wrapper--blue">
+                <h3 class="advantages-item__title title">Настоящий городок</h3>
+                <p class="advantages-item__description description">Седона не аттракцион для туристов, там течет своя
+                  жизнь</p>
+              </div>
+              <div class="container-with-picture__picture">
+                <picture>
+                  <source media="(min-width: 1280px)"
+                    srcset="img/photo_city_desktop.webp 1x, img/photo_city_desktop@2x.webp 2x" type="image/webp"
+                    width="800" height="256">
+                  <source media="(min-width: 1280px)"
+                    srcset="img/photo_city_desktop.png 1x, img/photo_city_desktop@2x.png 2x" type="image/png"
+                    width="800" height="256">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo_city_tablet.webp 1x, img/photo_city_tablet@2x.webp 2x" type="image/webp"
+                    width="512" height="256">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo_city_tablet.png 1x, img/photo_city_tablet@2x.png 2x" type="image/png" width="512"
+                    height="256">
+                  <source media="(min-width:320px)"
+                    srcset="img/photo_city_mobile.webp 1x, img/photo_city_mobile@2x.webp 2x" type="image/webp"
+                    width="320" height="260">
+                  <img class="advantages-item__image" loading="lazy" src="img/photo_city_mobile.jpg"
+                    srcset="img/photo_city_mobile@2x.jpg 2x" width="320" height="260" alt="Город.">
+                </picture>
+              </div>
             </div>
-            <img class="advantages-item__image" loading="lazy" src="img/photo_city.webp"
-              srcset="img/photo_city@2x.webp 2x" width="800" height="256" alt="Город.">
             <!-- Дополнительный список сервиса -->
-            <ul class="advantages-item__services-list advantages-services-list list">
+            <ul class="advantages-item__services-list advantages-services-list list wrapper">
               <li class="advantages-services-list__item advantages-services-item advantages-services-item--motel">
-                <h3 class="advantages-services-item__title title">Жилье</h3>
-                <p class="advantages-services-item__description description">Рекомендуем пожить в настоящем мотеле,
-                  все как в кино!</p>
+                <div class="advantages-services-item__container">
+                  <h3 class="advantages-services-item__title title">Жилье</h3>
+                  <p class="advantages-services-item__description description">Рекомендуем пожить&nbsp;в&nbsp;
+                    настоящем&nbsp;мотеле,&nbsp;все&nbsp;как&nbsp;в кино!</p>
+                </div>
               </li>
               <li class="advantages-services-list__item advantages-services-item advantages-services-item--food">
-                <h3 class="advantages-services-item__title title">Еда</h3>
-                <p class="advantages-services-item__description description">Всегда заказывайте фирменный бургер,вы не
-                  разочаруетесь!</p>
+                <div class="advantages-services-item__container">
+                  <h3 class="advantages-services-item__title title">Еда</h3>
+                  <p class="advantages-services-item__description description">Всегда заказывайте фирменный бургер,вы не
+                    разочаруетесь!</p>
+                </div>
               </li>
               <li class="advantages-services-list__item advantages-services-item advantages-services-item--gifts">
-                <h3 class="advantages-services-item__title title">Сувениры</h3>
-                <p class="advantages-services-item__description description">Не только китайского,
-                  но и местного производства!</p>
+                <div class="advantages-services-item__container">
+                  <h3 class="advantages-services-item__title title">Сувениры</h3>
+                  <p class="advantages-services-item__description description">Не только китайского,
+                    но&nbsp;и местного производства!</p>
+                </div>
               </li>
             </ul>
           </li>
           <!-- №2 ... мост дьявола-->
-          <li class="advantages-list__item advantages-item advantages-item--blue">
-            <div class="advantages-item__container">
-              <h3 class="advantages-item__title title">Там есть Мост дьявола</h3>
-              <p class="advantages-item__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно
+          <li class="advantages-list__item advantages-item advantages-item advantages-item--blue">
+            <div class="advantages-item__container-with-picture container-with-picture">
+              <div class="advantages-item__wrapper advantages-item__wrapper--blue">
+                <h3 class="advantages-item__title title">Там есть Мост дьявола</h3>
+                <p class="advantages-item__description description">Да, по нему можно пройти!&nbsp;Если&nbsp;вы
+                  осмелитесь, конечно</p>
+              </div>
+              <div class="container-with-picture__picture">
+                <picture>
+                  <source media="(min-width: 1280px)"
+                    srcset="img/photo_bridge_desktop.webp 1x, img/photo_bridge_desktop@2x.webp 2x" type="image/webp"
+                    width="800" height="256">
+                  <source media="(min-width: 1280px)"
+                    srcset="img/photo_bridge_desktop.png 1x, img/photo_bridge_desktop@2x.png 2x" type="image/png"
+                    width="800" height="256">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo_bridge_tablet.webp 1x, img/photo_bridge_tablet@2x.webp 2x" type="image/webp"
+                    width="512" height="256">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo_bridge_tablet.png 1x, img/photo_bridge_tablet@2x.png 2x" type="image/png"
+                    width="512" height="256">
+                  <source media="(min-width:320px)"
+                    srcset="img/photo_bridge_mobile.webp 1x, img/photo_bridge_mobile@2x.webp 2x" type="image/webp"
+                    width="320" height="260">
+                  <img class="advantages-item__image" loading="lazy" src="img/photo_bridge_mobile.jpg"
+                    srcset="img/photo_bridge_mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+                </picture>
+              </div>
+            </div>
+          </li>
+          <!-- №3-->
+          <li class="advantages-list__item advantages-item  advantages-item--grey">
+            <div class="advantages-item__wrapper">
+              <h3 class="advantages-item__title title">Небольшая площадь</h3>
+              <p class="advantages-item__description description">Все интересные&nbsp;места&nbsp;находятся очень близко
               </p>
             </div>
-            <img class="advantages-item__image" loading="lazy" src="img/photo_city.webp"
-            srcset="img/photo_city@2x.webp 2x" width="800" height="256" alt="Город.">
+          </li>
+          <!-- №4-->
+          <li class="advantages-list__item advantages-item  advantages-item--grey">
+            <div class="advantages-item__wrapper">
+              <h3 class="advantages-item__title title">Красивая дорога</h3>
+              <p class="advantages-item__description description">Ехать в Седону из Лас-&nbsp;Вегаса совсем не скучно!
+              </p>
+            </div>
+          </li>
+          <!-- №5-->
+          <li class="advantages-list__item advantages-item  advantages-item--grey">
+            <div class="advantages-item__wrapper">
+              <h3 class="advantages-item__title title">Мало туристов</h3>
+              <p class="advantages-item__description description">Большинство&nbsp;едет&nbsp;в&nbsp;гранд&nbsp;каньон и
+                толпится там</p>
+            </div>
           </li>
         </ul>
+      </section>
+      <section class="booking">
+        <h2 class="visually-hidden">Бронирование</h2>
+        <div class="booking__wrapper wrapper">
+          <p class="booking__title title">Заинтересовались?</p>
+          <p class="booking__description description">Укажите предполагаемые даты поездки, и мы покажем вам
+            лучшие предложения гостиниц в седоне</p>
+          <a class="booking__link button link booking-link" href="#"><span class="button__description">Найти
+              гостиницу</span></a>
+        </div>
+      </section>
+      <section class="location">
+        <iframe title="Карта." class="location__map location__map--nojs" width="320" height="350"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d209591.45430246674!2d-111.6801676!3d34.8344496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1696678462108!5m2!1sru!2sru"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <noscript>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/location_desktop.webp, img/location_desktop@2x.webp 2x"
+              width="1440" height="400" type="image/webp">
+            <source media="(min-width: 1280px)" srcset="img/location_desktop.jpg, img/location_desktop@2x.jpg 2x"
+              width="1440" height="400" type="image/jpg">
+            <source media="(min-width: 768px)" srcset="img/location_tablet.webp, img/location_tablet@2x.webp 2x"
+              width="768" height="400" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/location_tablet.jpg, img/location_tablet@2x.jpg 2x"
+              width="768" height="400" type="image/jpg">
+            <source media="(min-width: 320px)" srcset="img/location_mobile.webp, img/location_mobile@2x.webp 2x"
+              width="320" height="350" type="image/webp">
+            <img class="location__map" loading="lazy" src="img/location_mobile.jpg" srcset="img/location_mobile@2x.jpg"
+              width="320" height="350" alt="Расположение на карте.">
+          </picture>
+        </noscript>
       </section>
     </main>
     <!-- Подвал -->

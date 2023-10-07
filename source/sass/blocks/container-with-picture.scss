@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.container-with-picture {
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+  }
+}
+
+.container-with-picture__picture {
+  flex-grow: 1;
+}

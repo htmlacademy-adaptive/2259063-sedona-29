@@ -6,4 +6,16 @@
   border: none;
   background-color: variables.$main-color;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+    transition: 0.3s;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    .button__description {
+      opacity: 0.3;
+    }
+  }
 }

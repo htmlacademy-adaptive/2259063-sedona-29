@@ -1,9 +1,13 @@
 @use "../global/variables.scss";
 
-.advantages {
-  background-image: url("../img/advantages_mobile_triangle_top");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  position: relative;
+.advantages-services-list {
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages-services-list__item {
+  flex-basis: 24.75vw;
 }

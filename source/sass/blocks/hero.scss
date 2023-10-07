@@ -1,9 +1,9 @@
 @use "../global/variables.scss";
 
 .hero {
-  background-image:  url("../img/hero_triangle.svg"), url("../img/back_desktop.webp");
+  background-image: url("../img/hero_triangle.svg"), url("../img/back_desktop.webp");
   background-repeat: no-repeat;
-  background-position:  bottom, center;
+  background-position: bottom, center;
   background-size: auto, cover;
   background-color: #766357;
   min-height: 389px;
@@ -15,7 +15,7 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back_desktop@2x.webp");
+    background-image: url("../img/hero_triangle.svg"), url("../img/back_desktop@2x.webp");
   }
 }
 

@@ -1,0 +1,33 @@
+@use "../global/variables.scss";
+
+.booking__wrapper {
+  padding-top: 38px;
+  padding-bottom: 49px;
+  text-transform: uppercase;
+}
+
+.booking__title {
+  color: #000000;
+  font-size: clamp(18px, 5vw, 21px);
+  font-weight: 700;
+  line-height: 26px;
+  padding-bottom: 20px;
+}
+
+.booking__description {
+  padding-bottom: 32px;
+}
+
+.booking__link {
+  display: block;
+  padding: 16px;
+  color: #ffffff;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+
+
+}
+
+
