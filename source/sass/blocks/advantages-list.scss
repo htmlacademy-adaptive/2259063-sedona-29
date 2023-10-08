@@ -1,0 +1,10 @@
+@use "../global/variables.scss";
+
+.advantages-list {
+  counter-reset: section 0;
+
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

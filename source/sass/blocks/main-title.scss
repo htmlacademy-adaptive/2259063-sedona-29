@@ -1,0 +1,36 @@
+@use "../global/variables.scss";
+
+.main-title {
+  text-align: center;
+  text-wrap: balance;
+}
+
+.main-title__wrapper {
+  padding-top: 32px;
+  padding-bottom: 16px;
+
+  @media (min-width: variables.$screen-tablet) {
+    width: 520px;
+    padding-top: 47.5px;
+    padding-bottom: 55.5px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    width: 484px;
+    padding-top: 59px;
+    padding-bottom: 44px;
+  }
+}
+
+.main-title__title {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: clamp(18px, 5vw, 21px);
+  font-weight: 700;
+  line-height: 26px;
+  padding-bottom: 35px;
+}
+
+.main-title__description {
+  text-transform: uppercase;
+}

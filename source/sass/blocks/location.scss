@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.location__map {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.location__map--nojs {
+  display: none;
+}

@@ -1,0 +1,26 @@
+@use "../global/variables.scss";
+
+.copyright-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #000000;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #81b3d2;
+    transition: 0.2s;
+    .copyright-link__logo path {
+      fill: #81b3d2;
+      transition: 0.2s;
+    }
+  }
+
+  &:active {
+    color: #b3b3b3;
+    .copyright-link__logo path {
+      fill: #b3b3b3;
+    }
+  }
+}

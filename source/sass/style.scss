@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+// global
+
+@use "global/global.scss";
+@use "global/mixin.scss";
+@use "global/fonts.scss";
+@use "global/description.scss";
+@use "global/link.scss";
+@use "global/list.scss";
+@use "global/title.scss";
+@use "global/variables.scss";
+@use "global/visually-hidden.scss";
+@use "global/wrapper.scss";
+
+// blocks
+
+@use "blocks/page.scss";
+@use "blocks/main-nav.scss";
+@use "blocks/button.scss";
+@use "blocks/main-container.scss";
+@use "blocks/hero.scss";
+@use "blocks/main-footer.scss";
+@use "blocks/social-list.scss";
+@use "blocks/copyright-link.scss";
+@use "blocks/footer-container.scss";
+@use "blocks/main-title.scss";
+@use "blocks/advantages-list.scss";
+@use "blocks/advantages-item.scss";
+@use "blocks/advantages-services-list.scss";
+@use "blocks/advantages-services-item.scss";
+@use "blocks/booking.scss";
+@use "blocks/location.scss";
+@use "blocks/container-with-picture.scss";
