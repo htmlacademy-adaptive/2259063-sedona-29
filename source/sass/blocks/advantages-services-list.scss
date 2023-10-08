@@ -4,8 +4,7 @@
   @media (min-width: variables.$screen-tablet) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px clamp(33px, 7.42vw, 50px);
+    gap: 30px clamp(65px,7.42vw,100px);
   }
 }
 
