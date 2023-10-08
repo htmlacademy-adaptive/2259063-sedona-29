@@ -13,11 +13,10 @@
   &--grey {
     background-color: #eeeeee;
 
-    // @media (min-width: variables.$screen-tablet) {
-    //   display: inline-flex;
-    //   width: 256px;
-    //   height: 256px;
-    // }
+    @media (min-width: variables.$screen-tablet) {
+      flex-basis: clamp(256px, 33.333vw, 400px);
+      min-height: 256px;
+    }
   }
 }
 
@@ -53,37 +52,65 @@
   @media (min-width: variables.$screen-tablet) {
     flex-basis: clamp(256px, 50%, 31.25vw);
     padding: 52px 33px 31px 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--grey {
+      padding: 41px 33px;
+    }
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    &--grey {
+      padding: 52px 50px;
+    }
   }
 }
 
 .advantages-item__title {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 18px;
   font-size: clamp(18px, 5vw, 21px);
   font-weight: 700;
   line-height: 26px;
   padding-bottom: 17px;
+
+  &--grey {
+    @media (min-width: variables.$screen-tablet) {
+      padding-bottom: 20px;
+      width: 120px;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-bottom: 25px;
+    }
+  }
 }
 
 .advantages-item__image {
   object-fit: cover;
   width: 100%;
+
+  @media (min-width: variables.$screen-tablet) {
+    width: 68.667vw;
+    height: 100%;
+  }
 }
 
 .advantages-item__services-list {
-  padding-top: 23px;
-  padding-bottom: 46px;
+  padding: 23px 18px 46px 18px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     padding-top: 69px;
     padding-bottom: 69px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 }

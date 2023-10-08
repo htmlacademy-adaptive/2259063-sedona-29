@@ -10,7 +10,15 @@
   padding-bottom: 16px;
 
   @media (min-width: variables.$screen-tablet) {
+    width: 520px;
+    padding-top: 47.5px;
     padding-bottom: 55.5px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    width: 484px;
+    padding-top: 59px;
+    padding-bottom: 44px;
   }
 }
 

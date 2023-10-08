@@ -17,6 +17,7 @@
     align-items: center;
     text-align: center;
     padding-bottom: 0;
+    flex-basis: clamp(256px, 33.333vw, 400px);
   }
 
   &--motel {
@@ -78,4 +79,10 @@
   line-height: 26px;
   padding-bottom: 16px;
   padding-top: 8px;
+}
+
+.advantages-services-item__container {
+  @media (min-width: variables.$screen-tablet) {
+    width: clamp(190px, 24.75vw, 300px);
+  }
 }

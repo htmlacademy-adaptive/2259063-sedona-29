@@ -4,13 +4,6 @@
   @media (min-width: variables.$screen-tablet) {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px clamp(65px,7.42vw,100px);
+    gap: 30px 0;
   }
-}
-
-.advantages-services-list__item {
-  @media (min-width: variables.$screen-tablet) {
-    flex-basis: clamp(190px, 24.75vw, 300px);
-  }
-
 }
