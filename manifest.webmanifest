@@ -2,22 +2,22 @@
   "icons": [
     {
       "src": "source/img/favicons/favicon_32.svg",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "sizes": "32x32"
     },
     {
       "src": "source/img/favicons/favicon_152.svg",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "sizes": "152x152"
     },
     {
       "src": "source/img/favicons/favicon_192.svg",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "sizes": "192x192"
     },
     {
       "src": "source/img/favicons/favicon_512.svg",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "sizes": "512x512"
     }
   ]
