@@ -4,7 +4,7 @@ let logo = document.querySelector(".main-nav__logo")
 let map = document.querySelector("iframe")
 
 menu.classList.remove("main-nav__list--noscript");
-map.classList.remove("location__map--nojs");
+map?.classList.remove("location__map--nojs");
 button.classList.remove("main-nav__button--noscript");
 logo.classList.add("main-nav__logo--closed-menu");
 

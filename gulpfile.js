@@ -93,9 +93,8 @@ const svgSprite = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
-    'source/**/*.ico',
-    'manifest.webmanifest',
-    'favicon.ico'
+    'source/manifest.webmanifest',
+    'source/favicon.ico'
   ], {
     base: 'source'
   })
