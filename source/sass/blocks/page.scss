@@ -13,6 +13,8 @@
   line-height: 21px;
   color: #333333;
   margin: 0;
+  text-wrap: balance;
+
 
   min-height: 100%;
   background-color: #eeeeee;
@@ -21,6 +23,7 @@
 .page__container {
   min-width: 320px;
   max-width: 1200px;
+  min-height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

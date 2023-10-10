@@ -9,6 +9,10 @@
   padding-top: 32px;
   padding-bottom: 16px;
 
+  &--form {
+    padding-bottom: 28px;
+  }
+
   @media (min-width: variables.$screen-tablet) {
     width: 520px;
     padding-top: 47.5px;
@@ -29,8 +33,13 @@
   font-weight: 700;
   line-height: 26px;
   padding-bottom: 35px;
+
+  &--form {
+    padding-bottom: 24px;
+  }
 }
 
 .main-title__description {
   text-transform: uppercase;
+  white-space: break-spaces;
 }

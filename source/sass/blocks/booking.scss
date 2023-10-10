@@ -3,10 +3,10 @@
 .booking__wrapper {
   padding-top: 38px;
   padding-bottom: 49px;
+  max-width: 458px;
   text-transform: uppercase;
 
   @media (min-width: variables.$screen-tablet) {
-    width: 458px;
     padding: 60px 0 55px 0;
   }
 

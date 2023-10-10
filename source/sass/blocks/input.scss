@@ -1,0 +1,19 @@
+@use "../global/variables.scss";
+
+.input[type="number"] {
+  appearance: textfield;
+}
+
+.input[type="text"],
+.input[type="email"],
+.input[type="tel"]
+ {
+  border: none;
+  padding: 16px;
+  background-color: #f2f2f2;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  width: 100%;
+}
