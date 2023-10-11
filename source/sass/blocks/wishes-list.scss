@@ -1,0 +1,7 @@
+@use "../global/variables.scss";
+
+.wishes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

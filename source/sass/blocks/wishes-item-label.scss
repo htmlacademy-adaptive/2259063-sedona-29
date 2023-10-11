@@ -1,0 +1,13 @@
+@use "../global/variables.scss";
+
+.wishes-item-label {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  // display: flex;
+  // align-items: center;
+  // gap: 16px;
+  cursor: pointer;
+}
+

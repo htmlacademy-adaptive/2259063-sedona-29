@@ -95,20 +95,79 @@
             <!-- COMMENT email tel -->
             <fieldset class="form__contacts contacts fieldset">
               <div class="fieldset__container wrapper">
-              <legend class="visually-hidden">Контакты.</legend>
-              <h3 class="fieldset__title title">Контактная информация:</h3>
-              <legend class="visually-hidden"></legend>
-              <label class="contacts__label contacts__label--phone contacts-label label" for="phone">
-                <span class="label__name">Контактный телефон*:</span>
-                <input class="contacts-label__input input" type="tel" id="phone" name="phone"
-                  placeholder="Введите телефон" required>
-              </label>
-              <label class="contacts__label contacts__label--email contacts-label label" for="email">
-                <span class="label__name">Электронная почта*:</span>
-                <input class="contacts-label__input input" type="email" name="email" id="email"
-                  placeholder="Введите e-mail" required>
-              </label>
-            </div>
+                <legend class="visually-hidden">Контакты.</legend>
+                <h3 class="fieldset__title title">Контактная информация:</h3>
+                <legend class="visually-hidden"></legend>
+                <label class="contacts__label contacts__label--phone contacts-label label" for="phone">
+                  <span class="label__name">Контактный телефон*:</span>
+                  <input class="contacts-label__input input" type="tel" id="phone" name="phone"
+                    placeholder="Введите телефон" required>
+                </label>
+                <label class="contacts__label contacts__label--email contacts-label label" for="email">
+                  <span class="label__name">Электронная почта*:</span>
+                  <input class="contacts-label__input input" type="email" name="email" id="email"
+                    placeholder="Введите e-mail" required>
+                </label>
+              </div>
+            </fieldset>
+            <!-- RADIO -->
+            <fieldset class="form__wishes wishes fieldset">
+              <div class="fieldset__container fieldset__container--radio wrapper">
+                <legend class="visually-hidden">Впечатления</legend>
+                <h3 class="fieldset__title title">Ваше Общее впечатление:</h3>
+                <ul class="wishes__list wishes-list list">
+                  <li class="wishes-list__item wishes-item">
+                    <label class="wishes-item__label wishes-item-label" for="positive">
+                      <input class="wishes-item-label__input input visually-hidden" type="radio" value="положительное"
+                        id="positive" name="wishes" checked>
+                      <span class="wishes-item-label__name radio">Скорее положительное</span>
+                    </label>
+                  </li>
+                  <li class="wishes-list__item wishes-item">
+                    <label class="wishes-item__label wishes-item-label" for="negative">
+                      <input class="wishes-item-label__input input visually-hidden" type="radio" value="отрицательное"
+                        id="negative" name="wishes">
+                      <span class="wishes-item-label__name radio">Скорее отрицательное</span>
+                    </label>
+                  </li>
+                  <li class="wishes-list__item wishes-item">
+                    <label class="wishes-item__label wishes-item-label" for="complicated">
+                      <input class="wishes-item-label__input input visually-hidden" type="radio" value="Не знаю"
+                        id="complicated" name="wishes">
+                      <span class="wishes-item-label__name radio">Затрудняюсь ответить</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <!-- CHECKBOX -->
+            <fieldset class="form__visited visited fieldset">
+              <div class="fieldset__container fieldset__container--checkbox wrapper">
+                <legend class="visually-hidden">Что посетили?</legend>
+                <h3 class="fieldset__title title">Посещенные достопримечательности:</h3>
+                <div class="visted__container visited-container">
+                  <label class="visited__label visited-label" for="bridge">
+                    <input class="visited__input input visually-hidden" type="checkbox" id="bridge"
+                      value="bridge" name="visited" checked>
+                    <span class="visited-label__name checkbox">Мост Дьявола</span>
+                  </label>
+                  <label class="visited__label visited-label" for="mountain">
+                    <input class="visited__input input visually-hidden" type="checkbox" id="mountain"
+                      value="mountain" name="visited" checked>
+                    <span class="visited-label__name checkbox">Гора-Колокол</span>
+                  </label>
+                  <label class="visited__label visited-label" for="park">
+                    <input class="visited__input input visually-hidden" type="checkbox" id="park"
+                      value="park" name="visited" checked>
+                    <span class="visited-label__name checkbox">Слайд-парк</span>
+                  </label>
+                  <label class="visited__label visited-label" for="rocks">
+                    <input class="visited__input input visually-hidden" type="checkbox" id="rocks"
+                      value="rocks" name="visited">
+                    <span class="visited-label__name checkbox">Красные скалы</span>
+                  </label>
+                </div>
+              </div>
             </fieldset>
           </div>
         </form>

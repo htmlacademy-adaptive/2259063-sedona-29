@@ -17,3 +17,19 @@
   line-height: 26px;
   width: 100%;
 }
+
+.input[type=radio]:checked+.radio::after {
+  display: block;
+}
+
+.input[type=checkbox]:checked+.checkbox::after {
+  display: block;
+}
+
+.input[type=radio]:disabled +.radio {
+  opacity: 0.2;
+}
+
+.input[type=checkbox]:disabled +.checkbox {
+  opacity: 0.2;
+}
