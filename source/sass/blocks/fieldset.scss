@@ -1,11 +1,18 @@
+@use "../global/variables.scss";
+
 .fieldset {
   border: none;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #e5e5e5;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #e5e5e5;
+  }
 
-  &:first-child {
+  &:first-of-type {
     border-top: 1px solid #e5e5e5;
+    @media (min-width: variables.$screen-tablet) {
+      border-top: none;
+    }
   }
 }
 
@@ -23,11 +30,21 @@
   &--checkbox {
     padding-bottom: 24px;
   }
+
+  &--textarea {
+    padding-bottom: 56px;
+  }
+
+  &--button {
+    padding-top: 0;
+    padding-bottom: 22px;
+    gap: 3px;
+  }
 }
 
 .fieldset__title {
   color: #000000;
-  font-size: clamp(18px,5vw,21px);
+  font-size: clamp(18px, 5vw, 21px);
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;

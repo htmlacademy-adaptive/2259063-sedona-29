@@ -6,8 +6,7 @@
 
 .input[type="text"],
 .input[type="email"],
-.input[type="tel"]
- {
+.input[type="tel"] {
   border: none;
   padding: 16px;
   background-color: #f2f2f2;
@@ -16,20 +15,48 @@
   font-weight: 700;
   line-height: 26px;
   width: 100%;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    outline: 4px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    outline-offset: 2px;
+  }
 }
 
-.input[type=radio]:checked+.radio::after {
+.input[type="radio"]:focus + .radio::before,
+.input[type="checkbox"]:focus + .checkbox::before {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.input[type="radio"]:checked + .radio::after {
   display: block;
 }
 
-.input[type=checkbox]:checked+.checkbox::after {
+.input[type="checkbox"]:checked + .checkbox::after {
   display: block;
 }
 
-.input[type=radio]:disabled +.radio {
+.input[type="radio"]:disabled + .radio {
   opacity: 0.2;
 }
 
-.input[type=checkbox]:disabled +.checkbox {
+.input[type="checkbox"]:disabled + .checkbox {
   opacity: 0.2;
+}
+
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
 }

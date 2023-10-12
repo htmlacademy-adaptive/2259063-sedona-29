@@ -110,6 +110,7 @@
                 </label>
               </div>
             </fieldset>
+          </div>
             <!-- RADIO -->
             <fieldset class="form__wishes wishes fieldset">
               <div class="fieldset__container fieldset__container--radio wrapper">
@@ -147,29 +148,45 @@
                 <h3 class="fieldset__title title">Посещенные достопримечательности:</h3>
                 <div class="visted__container visited-container">
                   <label class="visited__label visited-label" for="bridge">
-                    <input class="visited__input input visually-hidden" type="checkbox" id="bridge"
-                      value="bridge" name="visited" checked>
+                    <input class="visited__input input visually-hidden" type="checkbox" id="bridge" value="bridge"
+                      name="visited" checked>
                     <span class="visited-label__name checkbox">Мост Дьявола</span>
                   </label>
                   <label class="visited__label visited-label" for="mountain">
-                    <input class="visited__input input visually-hidden" type="checkbox" id="mountain"
-                      value="mountain" name="visited" checked>
+                    <input class="visited__input input visually-hidden" type="checkbox" id="mountain" value="mountain"
+                      name="visited" checked>
                     <span class="visited-label__name checkbox">Гора-Колокол</span>
                   </label>
                   <label class="visited__label visited-label" for="park">
-                    <input class="visited__input input visually-hidden" type="checkbox" id="park"
-                      value="park" name="visited" checked>
+                    <input class="visited__input input visually-hidden" type="checkbox" id="park" value="park"
+                      name="visited" checked>
                     <span class="visited-label__name checkbox">Слайд-парк</span>
                   </label>
                   <label class="visited__label visited-label" for="rocks">
-                    <input class="visited__input input visually-hidden" type="checkbox" id="rocks"
-                      value="rocks" name="visited">
+                    <input class="visited__input input visually-hidden" type="checkbox" id="rocks" value="rocks"
+                      name="visited">
                     <span class="visited-label__name checkbox">Красные скалы</span>
                   </label>
                 </div>
               </div>
             </fieldset>
-          </div>
+            <!-- TEXTAREA -->
+            <fieldset class="form__comment-in-details comment-in-details fieldset">
+              <div class="fieldset__container fieldset__container--textarea wrapper">
+                <legend class="visually-hidden">Подробный комментарий.</legend>
+                <h3 class="fieldset__title title">Опишите свои эмоции:</h3>
+                <label class="comment-in-details__label label" for="comment-in-details">
+                  <span class="visually-hidden">Напишите комменатрий о своём коте</span>
+                  <textarea class="comment-in-details__input" rows="6" id="comment-in-details" name="comment-in-details"
+                    placeholder="Опишите подробно все свои восторги "></textarea>
+                </label>
+              </div>
+            </fieldset>
+            <div class="fieldset__container fieldset__container--button wrapper">
+              <button class="form__button button" type="submit"><span class="button__description">Отправить
+                  отзыв</span></button>
+              <small class="form__asterisk asterisk">* &#8213; Обязательные поля</small>
+            </div>
         </form>
       </section>
     </main>
@@ -196,7 +213,7 @@
             </a>
           </li>
         </ul>
-        <a class="main-footer__copyright-link link copyright-link">
+        <a class="main-footer__copyright-link link copyright-link" href="https://htmlacademy.ru">
           <span class="copyright-link__description description">разработано</span>
           <svg class="copyright-link__logo" aria-hidden="true" focusable="false" width="36" height="36"
             viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">

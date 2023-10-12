@@ -9,10 +9,6 @@
   padding-top: 32px;
   padding-bottom: 16px;
 
-  &--form {
-    padding-bottom: 28px;
-  }
-
   @media (min-width: variables.$screen-tablet) {
     width: 520px;
     padding-top: 47.5px;
@@ -23,6 +19,15 @@
     width: 484px;
     padding-top: 59px;
     padding-bottom: 44px;
+  }
+
+  &--form {
+    padding-bottom: 28px;
+
+    @media (min-width: variables.$screen-tablet) {
+      width: 436px;
+      padding: 64px 0 108px 0;
+    }
   }
 }
 
@@ -35,7 +40,8 @@
   padding-bottom: 35px;
 
   &--form {
-    padding-bottom: 24px;
+    padding-bottom: 20px;
+    font-size: clamp(18px, 5vw, 30px);
   }
 }
 
