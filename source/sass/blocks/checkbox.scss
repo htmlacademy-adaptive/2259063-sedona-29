@@ -1,0 +1,46 @@
+@use "../global/variables.scss";
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    background-image: url("../img/stack/sprite.svg#checkbox");
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 19px;
+    position: absolute;
+    left: 14px;
+  }
+}

@@ -1,0 +1,55 @@
+@use "../global/variables.scss";
+
+.contacts {
+  @media (min-width: variables.$screen-tablet) {
+    flex-basis: clamp(295px, 35.8vw, 430px);
+  }
+}
+
+.contacts__input {
+  width: 100%;
+}
+
+.contacts__label {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &--phone {
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(../img/stack/sprite.svg#phone);
+      width: 18px;
+      height: 18px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+
+  &--email {
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(../img/stack/sprite.svg#email);
+      width: 18px;
+      height: 18px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+}

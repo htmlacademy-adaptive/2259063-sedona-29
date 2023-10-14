@@ -4,6 +4,13 @@
   @media (min-width: variables.$screen-tablet) {
     display: flex;
   }
+
+  &--bridge {
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .container-with-picture__picture {

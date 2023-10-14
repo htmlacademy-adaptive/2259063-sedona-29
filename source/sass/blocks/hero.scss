@@ -10,8 +10,23 @@
   position: relative;
   z-index: 0;
 
+  &--notindex {
+    min-height: 158px;
+    background-position: bottom;
+  }
+
   @media (min-width: variables.$screen-tablet) {
     min-height: 518px;
+
+    &--notindex {
+      min-height: 290px;
+    }
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    &--notindex {
+      min-height: 301px;
+    }
   }
 
   @media (min-resolution: 2dppx) {
@@ -28,5 +43,10 @@
   @media (min-width: variables.$screen-tablet) {
     width: 461px;
     height: 350px;
+
+    &--notindex {
+      width: 457px;
+      height: 78px;
+    }
   }
 }

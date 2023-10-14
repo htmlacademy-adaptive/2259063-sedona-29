@@ -1,0 +1,17 @@
+@use "../global/variables.scss";
+
+.wishes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: variables.$screen-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 28px 36px 48px 36px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    gap: 16px 28px;
+  }
+}

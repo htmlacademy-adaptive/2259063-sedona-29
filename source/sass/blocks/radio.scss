@@ -1,0 +1,44 @@
+@use "../global/variables.scss";
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f2f2f2;
+  }
+
+  &::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #333333;
+    position: absolute;
+    left: 15px;
+    display: none;
+  }
+}

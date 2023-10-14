@@ -1,0 +1,7 @@
+@use "../global/variables.scss";
+
+.form-button {
+  @media (min-width: variables.$screen-tablet) {
+    flex-basis: clamp(324px, 32vw, 384px);
+  }
+}

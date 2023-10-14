@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.wishes__list {
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0 36px 48px 36px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 17px 53px 0;
+  }
+}

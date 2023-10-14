@@ -1,0 +1,7 @@
+@use "../global/variables.scss";
+
+.full-name {
+  @media (min-width: variables.$screen-tablet) {
+    flex-basis: clamp(295px, 35.8vw, 430px);
+  }
+}

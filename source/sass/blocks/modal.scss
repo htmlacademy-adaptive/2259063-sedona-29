@@ -1,0 +1,37 @@
+@use "../global/variables.scss";
+
+.modal__wrapper {
+  padding-left: 17px;
+  padding-right: 19px;
+  padding-bottom: 34px;
+}
+
+.modal__title {
+  font-size: clamp(18px, 5vw, 30px);
+  font-weight: 700;
+  line-height: clamp(26px, 6vw, 40px);
+  padding-bottom: 25px;
+}
+
+.modal__description {
+  padding-bottom: 28px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 43px;
+  }
+}
+
+.modal__button {
+  width: clamp(180px, 36.7vw, 272px);
+  margin: 0 auto;
+  font-size: clamp(18px, 5vw, 21px);
+  line-height: 26px;
+  padding:18px 14px 14px 14px;
+
+
+  &--valid {
+    width: clamp(280px, 59.6vw, 458px);
+    position: relative;
+    z-index: 1;
+  }
+}

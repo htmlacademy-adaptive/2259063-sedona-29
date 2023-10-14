@@ -20,6 +20,19 @@
     padding-top: 59px;
     padding-bottom: 44px;
   }
+
+  &--form {
+    padding-bottom: 28px;
+
+    @media (min-width: variables.$screen-tablet) {
+      width: 436px;
+      padding: 64px 0 108px 0;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding: 115px 0 68px 0;
+    }
+  }
 }
 
 .main-title__title {
@@ -29,8 +42,14 @@
   font-weight: 700;
   line-height: 26px;
   padding-bottom: 35px;
+
+  &--form {
+    padding-bottom: 20px;
+    font-size: clamp(18px, 5vw, 30px);
+  }
 }
 
 .main-title__description {
   text-transform: uppercase;
+  white-space: break-spaces;
 }

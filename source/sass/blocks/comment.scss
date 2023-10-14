@@ -1,0 +1,18 @@
+@use "../global/variables.scss";
+
+.comment__wrapper {
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.comment__form {
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}

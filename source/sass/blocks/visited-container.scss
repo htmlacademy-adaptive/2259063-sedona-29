@@ -1,0 +1,17 @@
+@use "../global/variables.scss";
+
+.visited-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: variables.$screen-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    gap: 16px 45px;
+  }
+}

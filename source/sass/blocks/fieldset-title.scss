@@ -1,0 +1,14 @@
+@use "../global/variables.scss";
+
+.fieldset-title__description {
+  @media (min-width: variables.$screen-tablet) {
+    display: block;
+    background-color: #ffffff;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 0 47px;
+    max-width: 366px;
+  }
+}
