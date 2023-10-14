@@ -1,0 +1,10 @@
+@use "../global/variables.scss";
+
+.modal-container__modal {
+  position: relative;
+  margin: auto;
+  padding: 45px 42px 35px 41px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}

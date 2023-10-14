@@ -5,5 +5,8 @@
 }
 
 .form__container {
-  display: flex;
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+  }
+
 }

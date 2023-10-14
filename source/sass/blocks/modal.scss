@@ -1,0 +1,23 @@
+@use "../global/variables.scss";
+
+.modal {
+  // width: 907px;
+  // outline: 10px solid #000000;
+  // box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal__title {
+  font-size: clamp(18px, 5vw, 21px);
+  font-weight: 700;
+  line-height: 26px;
+  padding-bottom: 25px;
+}
+
+.modal__description {
+  padding-bottom: 28px;
+}
+
+.modal__button {
+  width: clamp(180px, 36.7vw, 272px);
+  margin: 0 auto;
+}
