@@ -7,5 +7,20 @@
 .form__container {
   @media (min-width: variables.$screen-tablet) {
     display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 63px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 1px;
+      background-color: #dbdbdb;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }

@@ -3,8 +3,40 @@
 .modal-container__modal {
   position: relative;
   margin: auto;
-  padding: 45px 42px 35px 41px;
   background-color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+
+  &--invalid {
+    padding: 45px 42px 35px 41px;
+    width: clamp(320px, 52vw, 400px);
+
+    @media (min-width: variables.$screen-tablet) {
+      padding: 50px 47px 49px 46px;
+    }
+  }
+
+  &--valid {
+    padding: 44px 20px 20px 20px;
+    width: clamp(320px, 83vw, 640px);
+
+    @media (min-width: variables.$screen-tablet) {
+      padding: 53px 91px 44px 91px;
+    }
+
+    &::after {
+      content: "";
+      height: 98px;
+      width: 100%;
+      background-color: #f2f2f2;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @media (min-width: variables.$screen-tablet) {
+        height: 146px;
+      }
+    }
+  }
 }

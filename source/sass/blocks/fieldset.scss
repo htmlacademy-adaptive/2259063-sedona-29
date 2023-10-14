@@ -6,6 +6,9 @@
   padding: 0;
   &:not(:last-of-type) {
     border-bottom: 1px solid #e5e5e5;
+    @media (min-width: variables.$screen-tablet) {
+      border-bottom: none;
+    }
   }
 
   &:first-of-type {
@@ -23,16 +26,40 @@
   flex-direction: column;
   gap: 16px;
 
+  &--full-name {
+    @media (min-width: variables.$screen-tablet) {
+      padding: 0;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: variables.$screen-tablet) {
+      padding: 0;
+    }
+  }
+
   &--radio {
     padding-bottom: 24px;
+
+    @media (min-width: variables.$screen-tablet) {
+      padding: 0;
+    }
   }
 
   &--checkbox {
     padding-bottom: 24px;
+
+    @media (min-width: variables.$screen-tablet) {
+      padding: 0;
+    }
   }
 
   &--textarea {
     padding-bottom: 56px;
+
+    @media (min-width: variables.$screen-tablet) {
+      padding: 0;
+    }
   }
 
   &--button {
@@ -49,4 +76,8 @@
   line-height: 26px;
   text-transform: uppercase;
   padding-bottom: 4px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 28px;
+  }
 }

@@ -1,5 +1,11 @@
 @use "../global/variables.scss";
 
+.contacts {
+  @media (min-width: variables.$screen-tablet) {
+    flex-basis: clamp(295px, 35.8vw, 430px);
+  }
+}
+
 .contacts__input {
   width: 100%;
 }

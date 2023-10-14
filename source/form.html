@@ -69,11 +69,12 @@
       </section>
       <!-- COMMENT -->
       <section class="comment">
+        <div class="comment__wrapper wrapper">
         <form class="comment__form form" action="https://echo.htmlacademy.ru/" method="get">
           <!-- COMMENT full-name -->
           <div class="form__container">
             <fieldset class="form__full-name full-name fieldset">
-              <div class="fieldset__container wrapper">
+              <div class="fieldset__container fieldset__container--full-name wrapper">
                 <legend class="visually-hidden">Фамилия Имя Отчество</legend>
                 <h3 class="fieldset__title title">Представьтесь:</h3>
                 <label class="full-name__label full-name-label label" for="name">
@@ -94,7 +95,7 @@
             </fieldset>
             <!-- COMMENT email tel -->
             <fieldset class="form__contacts contacts fieldset">
-              <div class="fieldset__container wrapper">
+              <div class="fieldset__container fieldset__container--contacts wrapper">
                 <legend class="visually-hidden">Контакты.</legend>
                 <h3 class="fieldset__title title">Контактная информация:</h3>
                 <legend class="visually-hidden"></legend>
@@ -111,83 +112,84 @@
               </div>
             </fieldset>
           </div>
-            <!-- RADIO -->
-            <fieldset class="form__wishes wishes fieldset">
-              <div class="fieldset__container fieldset__container--radio wrapper">
-                <legend class="visually-hidden">Впечатления</legend>
-                <h3 class="fieldset__title title">Ваше Общее впечатление:</h3>
-                <ul class="wishes__list wishes-list list">
-                  <li class="wishes-list__item wishes-item">
-                    <label class="wishes-item__label wishes-item-label" for="positive">
-                      <input class="wishes-item-label__input input visually-hidden" type="radio" value="положительное"
-                        id="positive" name="wishes" checked>
-                      <span class="wishes-item-label__name radio">Скорее положительное</span>
-                    </label>
-                  </li>
-                  <li class="wishes-list__item wishes-item">
-                    <label class="wishes-item__label wishes-item-label" for="negative">
-                      <input class="wishes-item-label__input input visually-hidden" type="radio" value="отрицательное"
-                        id="negative" name="wishes">
-                      <span class="wishes-item-label__name radio">Скорее отрицательное</span>
-                    </label>
-                  </li>
-                  <li class="wishes-list__item wishes-item">
-                    <label class="wishes-item__label wishes-item-label" for="complicated">
-                      <input class="wishes-item-label__input input visually-hidden" type="radio" value="Не знаю"
-                        id="complicated" name="wishes">
-                      <span class="wishes-item-label__name radio">Затрудняюсь ответить</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
-            <!-- CHECKBOX -->
-            <fieldset class="form__visited visited fieldset">
-              <div class="fieldset__container fieldset__container--checkbox wrapper">
-                <legend class="visually-hidden">Что посетили?</legend>
-                <h3 class="fieldset__title title">Посещенные достопримечательности:</h3>
-                <div class="visted__container visited-container">
-                  <label class="visited__label visited-label" for="bridge">
-                    <input class="visited__input input visually-hidden" type="checkbox" id="bridge" value="bridge"
-                      name="visited" checked>
-                    <span class="visited-label__name checkbox">Мост Дьявола</span>
+          <!-- RADIO -->
+          <fieldset class="form__wishes wishes fieldset">
+            <div class="fieldset__container fieldset__container--radio wrapper">
+              <legend class="visually-hidden">Впечатления</legend>
+              <h3 class="fieldset__title fieldset-title title"> <span class="fieldset-title__description">Ваше Общее впечатление:</span></h3>
+              <ul class="wishes__list wishes-list list">
+                <li class="wishes-list__item wishes-item">
+                  <label class="wishes-item__label wishes-item-label" for="positive">
+                    <input class="wishes-item-label__input input visually-hidden" type="radio" value="положительное"
+                      id="positive" name="wishes" checked>
+                    <span class="wishes-item-label__name radio">Скорее положительное</span>
                   </label>
-                  <label class="visited__label visited-label" for="mountain">
-                    <input class="visited__input input visually-hidden" type="checkbox" id="mountain" value="mountain"
-                      name="visited" checked>
-                    <span class="visited-label__name checkbox">Гора-Колокол</span>
+                </li>
+                <li class="wishes-list__item wishes-item">
+                  <label class="wishes-item__label wishes-item-label" for="negative">
+                    <input class="wishes-item-label__input input visually-hidden" type="radio" value="отрицательное"
+                      id="negative" name="wishes">
+                    <span class="wishes-item-label__name radio">Скорее отрицательное</span>
                   </label>
-                  <label class="visited__label visited-label" for="park">
-                    <input class="visited__input input visually-hidden" type="checkbox" id="park" value="park"
-                      name="visited" checked>
-                    <span class="visited-label__name checkbox">Слайд-парк</span>
+                </li>
+                <li class="wishes-list__item wishes-item">
+                  <label class="wishes-item__label wishes-item-label" for="complicated">
+                    <input class="wishes-item-label__input input visually-hidden" type="radio" value="Не знаю"
+                      id="complicated" name="wishes">
+                    <span class="wishes-item-label__name radio">Затрудняюсь ответить</span>
                   </label>
-                  <label class="visited__label visited-label" for="rocks">
-                    <input class="visited__input input visually-hidden" type="checkbox" id="rocks" value="rocks"
-                      name="visited">
-                    <span class="visited-label__name checkbox">Красные скалы</span>
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            <!-- TEXTAREA -->
-            <fieldset class="form__comment-in-details comment-in-details fieldset">
-              <div class="fieldset__container fieldset__container--textarea wrapper">
-                <legend class="visually-hidden">Подробный комментарий.</legend>
-                <h3 class="fieldset__title title">Опишите свои эмоции:</h3>
-                <label class="comment-in-details__label label" for="comment-in-details">
-                  <span class="visually-hidden">Напишите комменатрий о своём коте</span>
-                  <textarea class="comment-in-details__input" rows="6" id="comment-in-details" name="comment-in-details"
-                    placeholder="Опишите подробно все свои восторги "></textarea>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <!-- CHECKBOX -->
+          <fieldset class="form__visited visited fieldset">
+            <div class="fieldset__container fieldset__container--checkbox wrapper">
+              <legend class="visually-hidden">Что посетили?</legend>
+              <h3 class="fieldset__title title">Посещенные достопримечательности:</h3>
+              <div class="visted__container visited-container">
+                <label class="visited__label visited-label" for="bridge">
+                  <input class="visited__input input visually-hidden" type="checkbox" id="bridge" value="bridge"
+                    name="visited" checked>
+                  <span class="visited-label__name checkbox">Мост Дьявола</span>
+                </label>
+                <label class="visited__label visited-label" for="mountain">
+                  <input class="visited__input input visually-hidden" type="checkbox" id="mountain" value="mountain"
+                    name="visited" checked>
+                  <span class="visited-label__name checkbox">Гора-Колокол</span>
+                </label>
+                <label class="visited__label visited-label" for="park">
+                  <input class="visited__input input visually-hidden" type="checkbox" id="park" value="park"
+                    name="visited" checked>
+                  <span class="visited-label__name checkbox">Слайд-парк</span>
+                </label>
+                <label class="visited__label visited-label" for="rocks">
+                  <input class="visited__input input visually-hidden" type="checkbox" id="rocks" value="rocks"
+                    name="visited">
+                  <span class="visited-label__name checkbox">Красные скалы</span>
                 </label>
               </div>
-            </fieldset>
-            <div class="fieldset__container fieldset__container--button wrapper">
-              <button class="form__button button" type="submit"><span class="button__description">Отправить
-                  отзыв</span></button>
-              <small class="form__asterisk asterisk">* &#8213; Обязательные поля</small>
             </div>
+          </fieldset>
+          <!-- TEXTAREA -->
+          <fieldset class="form__comment-in-details comment-in-details fieldset">
+            <div class="fieldset__container fieldset__container--textarea wrapper">
+              <legend class="visually-hidden">Подробный комментарий.</legend>
+              <h3 class="fieldset__title title">Опишите свои эмоции:</h3>
+              <label class="comment-in-details__label label" for="comment-in-details">
+                <span class="visually-hidden">Напишите комменатрий о своём коте</span>
+                <textarea class="comment-in-details__input" rows="6" id="comment-in-details" name="comment-in-details"
+                  placeholder="Опишите подробно все свои восторги "></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <div class="fieldset__container fieldset__container--button wrapper">
+            <button class="form__button button" type="submit"><span class="button__description">Отправить
+                отзыв</span></button>
+            <small class="form__asterisk asterisk">* &#8213; Обязательные поля</small>
+          </div>
         </form>
+      </div>
       </section>
     </main>
     <!-- Подвал -->
@@ -224,12 +226,22 @@
         </a>
       </div>
     </footer>
+    <!-- Модальные окна -->
     <div class="page__modal modal-container page__modal--closed">
-      <div class="modal-container__modal modal modal-container__modal--OK">
-      <p class="modal__title title">Что-то пошло не так!</p>
-      <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего&nbsp;вы забыли их заполнить</p>
-      <button type="button" class="modal__button button">OK</button>
-    </div>
+      <div class="modal-container__modal modal modal-container__modal--invalid">
+        <p class="modal__title title">Что-то пошло не так!</p>
+        <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего&nbsp;вы забыли их
+          заполнить</p>
+        <button type="button" class="modal__button modal__button--invalid button">OK</button>
+      </div>
+      <div class="modal-container__modal modal modal-container__modal--valid">
+        <div class="modal__wrapper">
+          <p class="modal__title title">Ваш отзыв отправлен!</p>
+          <p class="modal__description description">Спасибо за ваше участие,&nbsp;ваш отзыв уже поступил к нам. В
+            ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <button type="button" class="modal__button modal__button--valid button">Закрыть окно</button>
+      </div>
     </div>
   </div>
 </body>
