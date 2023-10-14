@@ -28,6 +28,10 @@
       width: 436px;
       padding: 64px 0 108px 0;
     }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding: 115px 0 68px 0;
+    }
   }
 }
 

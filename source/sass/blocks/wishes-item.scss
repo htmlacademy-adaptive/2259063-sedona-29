@@ -1,0 +1,7 @@
+@use "../global/variables.scss";
+
+.wishes-item {
+  @media (min-width: variables.$screen-tablet) {
+    flex-basis: 266px;
+  }
+}

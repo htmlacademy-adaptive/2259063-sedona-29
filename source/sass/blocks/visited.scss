@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.visited__container {
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0 84px 42px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 31px 44.5px 0;
+  }
+}

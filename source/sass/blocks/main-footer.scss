@@ -14,8 +14,8 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -32,4 +32,8 @@
 
 .main-footer__list {
   padding: 30px 0;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0;
+  }
 }

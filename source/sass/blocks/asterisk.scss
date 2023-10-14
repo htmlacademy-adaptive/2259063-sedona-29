@@ -6,4 +6,8 @@ text-align: center;
 font-size: 12px;
 line-height: 21px;
 text-transform: uppercase;
+
+@media (min-width: variables.$screen-tablet) {
+  font-size: 14px;
+}
 }

@@ -6,4 +6,12 @@
   font-weight: 700;
   line-height: 26px;
   cursor: pointer;
+
+  @media (min-width: variables.$screen-tablet) {
+    flex-basis: 224px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    flex-basis: 184px;
+  }
 }
