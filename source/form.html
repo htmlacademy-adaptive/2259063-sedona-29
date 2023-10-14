@@ -79,17 +79,18 @@
                   <h3 class="fieldset__title title">Представьтесь:</h3>
                   <label class="full-name__label full-name-label label" for="name">
                     <span class="label__name">Имя:*</span>
-                    <input class="full-name-label__input input" type="text" name="name" id="name" value="Пётр" required>
+                    <input class="full-name-label__input input" type="text" name="name" id="name" placeholder="Имя"
+                      value="Пётр" required>
                   </label>
                   <label class="full-name__label full-name-label label" for="surname_first">
                     <span class="label__name">Фамилия*:</span>
                     <input class="full-name-label__input input" type="text" name="surname_first" id="surname_first"
-                      value="Пустота" required>
+                      placeholder="Фамилия" value="Пустота" required>
                   </label>
                   <label class="full-name__label full-name-label label" for="surname_second">
                     <span class="label__name">Отчество:</span>
                     <input class="full-name-label__input input" type="text" name="surname_second" id="surname_second"
-                      value="Викторович">
+                      placeholder="Отчество" value="Викторович">
                   </label>
                 </div>
               </fieldset>
@@ -101,8 +102,8 @@
                   <legend class="visually-hidden"></legend>
                   <label class="contacts__label contacts__label--phone contacts-label label" for="phone">
                     <span class="label__name">Контактный телефон*:</span>
-                    <input class="contacts-label__input input" type="tel" id="phone" name="phone"
-                      placeholder="Введите телефон" required>
+                    <input class="contacts-label__input input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      id="phone" name="phone" placeholder="Введите телефон" required>
                   </label>
                   <label class="contacts__label contacts__label--email contacts-label label" for="email">
                     <span class="label__name">Электронная почта*:</span>
