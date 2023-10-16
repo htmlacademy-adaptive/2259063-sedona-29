@@ -1,0 +1,29 @@
+@use "../global/variables.scss";
+
+.like {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.like__button {
+  border: none;
+  width: 23px;
+  height: 21px;
+  background-color: transparent;
+  padding: 0;
+  flex-shrink: 0;
+  mask-image: url("../img/stack/sprite.svg#like");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #000000;
+  fill-opacity: 0.3;
+}
+
+.like__value {
+  display: block;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 10px;
+}

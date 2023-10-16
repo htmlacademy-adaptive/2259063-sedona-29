@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.photo-list__item {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &:first-child {
+    border-top: 1px solid #e5e5e5;
+  }
+}
