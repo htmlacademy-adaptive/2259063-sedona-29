@@ -3,8 +3,20 @@
 .photo-item__image {
   object-fit: cover;
   width: 100%;
+
+  &--small {
+    @media (min-width: variables.$screen-tablet) {
+      width: clamp(324px, 42vw, 540px);
+    }
+  }
 }
 
 .photo-item__name {
   padding-top: 15px;
+}
+
+.photo-item__wrapper {
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0;
+  }
 }

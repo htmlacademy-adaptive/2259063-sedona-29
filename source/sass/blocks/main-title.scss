@@ -33,6 +33,16 @@
       padding: 115px 0 68px 0;
     }
   }
+
+  &--photo {
+    width: clamp(280px, 59.6vw, 458px);
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: variables.$screen-tablet) {
+      padding: 66px 0 67px;
+    }
+  }
 }
 
 .main-title__title {
@@ -56,5 +66,4 @@
 
 .main-title__description {
   text-transform: uppercase;
-  white-space: break-spaces;
 }

@@ -68,6 +68,8 @@
         </div>
       </section>
       <section class="photo">
+        <h2 class="visually-hidden">Фото</h2>
+        <div class="photo__wrapper">
         <ul class="photo__list list photo-list">
           <!-- photo-1 -->
           <li class="photo-list__item photo-item">
@@ -88,24 +90,24 @@
                 <source media="(min-width:320px)"
                   srcset="img/photo.html/photo_1/photo_1_mobile.webp 1x, img/photo.html/photo_1/photo_1_mobile@2x.webp 2x"
                   type="image/webp" width="320" height="260">
-                <img class="photo-item__image photo-item__image--large" loading="lazy"
+                <img class="photo-item__image" loading="lazy"
                   src="img/photo.html/photo_1/photo_1_mobile.jpg"
                   srcset="img/photo.html/photo_1/photo_1_mobile@2x.jpg 2x" width="280" height="280"
                   alt="Неродные просторы.">
               </picture>
-            <div class="photo-item__name name">
-              <h4 class="name__title title">неродные просторы</h4>
-              <p class="name__author description">Автор фото: Борис</p>
-              <div class="name__container like">
-                <button type="button" class="like__button"></button>
-                <span class="like__value">1350</span>
+              <div class="photo-item__name name">
+                <h3 class="name__title title">неродные просторы</h3>
+                <p class="name__author description">Автор фото: Борис</p>
+                <div class="name__container like">
+                  <button type="button" class="like__button added" aria-label="Нравится."></button>
+                  <span class="like__value">1350</span>
+                </div>
               </div>
             </div>
-          </div>
           </li>
           <!-- photo-2 -->
-          <li class="photo-list__item photo-item">
-            <div class="photo-item__wrapper wrapper">
+          <li class="photo-list__item photo-item photo-list__item--small">
+            <div class="photo-item__wrapper wrapper photo-item__wrapper--small">
               <picture>
                 <source media="(min-width: 480px)"
                   srcset="img/photo.html/photo_2/photo_2_desktop.webp 1x, img/photo.html/photo_2/photo_2_desktop@2x.webp 2x"
@@ -116,22 +118,104 @@
                 <source media="(min-width:320px)"
                   srcset="img/photo.html/photo_2/photo_2_mobile.webp 1x, img/photo.html/photo_2/photo_2_mobile@2x.webp 2x"
                   type="image/webp" width="320" height="260">
-                <img class="photo-item__image photo-item__image--large" loading="lazy"
+                <img class="photo-item__image photo-item__image--small" loading="lazy"
                   src="img/photo.html/photo_2/photo_2_mobile.jpg"
                   srcset="img/photo.html/photo_2/photo_2_mobile@2x.jpg 2x" width="280" height="280"
                   alt="Местная растительность.">
               </picture>
-            <div class="photo-item__name name">
-              <h4 class="name__title title">неродные просторы</h4>
-              <p class="name__author description">Автор фото: Борис</p>
-              <div class="name__container like">
-                <button type="button" class="like__button"></button>
-                <span class="like__value">1350</span>
+              <div class="photo-item__name name">
+                <h3 class="name__title title">Местная растительность</h3>
+                <p class="name__author description">Автор фото: Сергей</p>
+                <div class="name__container like">
+                  <button type="button" class="like__button added" aria-label="Нравится."></button>
+                  <span class="like__value">143</span>
+                </div>
               </div>
             </div>
-          </div>
+          </li>
+          <!-- photo-3 -->
+          <li class="photo-list__item photo-item photo-list__item--small">
+            <div class="photo-item__wrapper wrapper photo-item__wrapper--small">
+              <picture>
+                <source media="(min-width: 480px)"
+                  srcset="img/photo.html/photo_3/photo_3_desktop.webp 1x, img/photo.html/photo_3/photo_3_desktop@2x.webp 2x"
+                  type="image/webp" width="400" height="267">
+                <source media="(min-width: 480px)"
+                  srcset="img/photo.html/photo_3/photo_3_desktop.jpg 1x, img/photo.html/photo_3/photo_3_desktop@2x.jpg 2x"
+                  type="image/jpg" width="400" height="267">
+                <source media="(min-width:320px)"
+                  srcset="img/photo.html/photo_3/photo_3_mobile.webp 1x, img/photo.html/photo_3/photo_3_mobile@2x.webp 2x"
+                  type="image/webp" width="320" height="260">
+                <img class="photo-item__image photo-item__image--small" loading="lazy"
+                  src="img/photo.html/photo_3/photo_3_mobile.jpg"
+                  srcset="img/photo.html/photo_3/photo_3_mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Дорога на север.">
+              </picture>
+              <div class="photo-item__name name">
+                <h3 class="name__title title">Дорога на север</h3>
+                <p class="name__author description">Автор фото: Петр</p>
+                <div class="name__container like">
+                  <button type="button" class="like__button added" aria-label="Нравится."></button>
+                  <span class="like__value">96</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- photo-4 -->
+          <li class="photo-list__item photo-item photo-list__item--small">
+            <div class="photo-item__wrapper wrapper photo-item__wrapper--small">
+              <picture>
+                <source media="(min-width: 480px)"
+                  srcset="img/photo.html/photo_4/photo_4_desktop.webp 1x, img/photo.html/photo_4/photo_4_desktop@2x.webp 2x"
+                  type="image/webp" width="400" height="267">
+                <source media="(min-width: 480px)"
+                  srcset="img/photo.html/photo_4/photo_4_desktop.jpg 1x, img/photo.html/photo_4/photo_4_desktop@2x.jpg 2x"
+                  type="image/jpg" width="400" height="267">
+                <source media="(min-width:320px)"
+                  srcset="img/photo.html/photo_4/photo_4_mobile.webp 1x, img/photo.html/photo_4/photo_4_mobile@2x.webp 2x"
+                  type="image/webp" width="320" height="260">
+                <img class="photo-item__image photo-item__image--small" loading="lazy"
+                  src="img/photo.html/photo_4/photo_4_mobile.jpg"
+                  srcset="img/photo.html/photo_4/photo_4_mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+              </picture>
+              <div class="photo-item__name name">
+                <h3 class="name__title title">Мост дьявола</h3>
+                <p class="name__author description">Автор фото: Антон</p>
+                <div class="name__container like">
+                  <button type="button" class="like__button added" aria-label="Нравится."></button>
+                  <span class="like__value">254</span>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
+      </div>
+      </section>
+      <!-- VIDEO -->
+      <section class="video">
+        <div class="video__wrapper wrapper">
+          <h2 class="visually-hidden">Видео.</h2>
+          <p class="video__title title">Все еще сомневаетесь?</p>
+          <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!
+          </p>
+          <div class="video__container">
+            <picture>
+              <source media="(min-width: 480px)"
+                srcset="img/photo.html/photo_video/video_desktop.webp 1x, img/photo.html/photo_video/video_desktop@2x.webp 2x"
+                type="image/webp" width="800" height="500">
+              <source media="(min-width: 480px)"
+                srcset="img/photo.html/photo_video/video_desktop.jpg 1x, img/photo.html/photo_video/video_desktop@2x.jpg 2x"
+                type="image/jpg" width="800" height="500">
+              <source media="(min-width:320px)"
+                srcset="img/photo.html/photo_video/video_mobile.webp 1x, img/photo.html/photo_video/video_mobile@2x.webp 2x"
+                type="image/webp" width="280" height="177">
+              <img class="video__image" loading="lazy" src="img/photo.html/photo_video/video_mobile.jpg"
+                srcset="img/photo.html/photo_video/video_mobile@2x.jpg 2x" width="280" height="177"
+                alt="Видео местных достопримечательностей.">
+            </picture>
+          </div>
+        </div>
       </section>
     </main>
     <!-- Подвал -->

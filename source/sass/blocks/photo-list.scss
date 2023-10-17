@@ -1,5 +1,12 @@
 @use "../global/variables.scss";
 
+.photo-list {
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .photo-list__item {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -7,5 +14,19 @@
 
   &:first-child {
     border-top: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    border: none;
+    padding: 0;
+
+    &:first-child {
+      border: none;
+    }
+
+    &--small {
+      // flex-basis: clamp(324px, 33.33vw, 400px);
+      flex-grow: 1;
+    }
   }
 }
