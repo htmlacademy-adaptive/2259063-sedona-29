@@ -6,7 +6,7 @@
 
   &--small {
     @media (min-width: variables.$screen-tablet) {
-      width: clamp(324px, 42vw, 540px);
+      width: clamp(324px, 42.18vw, 540px);
     }
   }
 }
