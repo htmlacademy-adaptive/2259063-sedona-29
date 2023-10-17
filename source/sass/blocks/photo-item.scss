@@ -4,11 +4,11 @@
   object-fit: cover;
   width: 100%;
 
-  &--small {
-    @media (min-width: variables.$screen-tablet) {
-      width: clamp(324px, 42.18vw, 540px);
-    }
-  }
+  // &--small {
+  //   @media (min-width: variables.$screen-tablet) {
+  //     width: clamp(324px, 42.18vw, 540px);
+  //   }
+  // }
 }
 
 .photo-item__name {

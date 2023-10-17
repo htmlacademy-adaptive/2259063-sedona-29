@@ -25,8 +25,7 @@
     }
 
     &--small {
-      // flex-basis: clamp(324px, 33.33vw, 400px);
-      // flex-grow: 1;
+      width: 50%;
     }
   }
 }
