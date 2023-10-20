@@ -2,7 +2,11 @@
 
 .photo__wrapper {
   @media (min-width: variables.$screen-tablet) {
-    padding: 0 60px;
+    padding: 0 60px 58px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 0 0 62px;
   }
 }
 

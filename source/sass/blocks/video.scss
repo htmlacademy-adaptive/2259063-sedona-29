@@ -12,6 +12,10 @@
 .video__description {
   text-transform: uppercase;
   padding: 0 5px 38px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 78px;
+  }
 }
 
 .video__image {
@@ -21,6 +25,16 @@
 
 .video__container {
   position: relative;
+  margin: 0 auto;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    max-width: 800px;
+
+  }
 }
 
 .video__button {
@@ -36,6 +50,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 
   &::before {
     content: "";
