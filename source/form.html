@@ -34,10 +34,10 @@
               <a class="main-nav__link link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link main-nav__link--active" href="#">Фото и видео</a>
+              <a class="main-nav__link link" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link" href="form.html">Форма отзыва</a>
+              <a class="main-nav__link link main-nav__link--active" href="#">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link link" href="https://htmlacademy.ru/study">Html Academy</a>
@@ -74,35 +74,35 @@
             <!-- COMMENT full-name -->
             <div class="form__container">
               <fieldset class="form__full-name full-name fieldset">
+                <legend class="visually-hidden">Фамилия Имя Отчество</legend>
                 <div class="fieldset__container fieldset__container--full-name wrapper">
-                  <legend class="visually-hidden">Фамилия Имя Отчество</legend>
-                  <h3 class="fieldset__title title">Представьтесь:</h3>
+                  <h3 class="fieldset__title fieldset__title--full-name title">Представьтесь:</h3>
                   <label class="full-name__label full-name-label label" for="name">
                     <span class="label__name">Имя:*</span>
-                    <input class="full-name-label__input input" type="text" name="name" id="name" value="Пётр" required>
+                    <input class="full-name-label__input input" type="text" name="name" id="name" placeholder="Имя"
+                      value="Пётр" required>
                   </label>
                   <label class="full-name__label full-name-label label" for="surname_first">
                     <span class="label__name">Фамилия*:</span>
                     <input class="full-name-label__input input" type="text" name="surname_first" id="surname_first"
-                      value="Пустота" required>
+                      placeholder="Фамилия" value="Пустота" required>
                   </label>
                   <label class="full-name__label full-name-label label" for="surname_second">
                     <span class="label__name">Отчество:</span>
                     <input class="full-name-label__input input" type="text" name="surname_second" id="surname_second"
-                      value="Викторович">
+                      placeholder="Отчество" value="Викторович">
                   </label>
                 </div>
               </fieldset>
               <!-- COMMENT email tel -->
               <fieldset class="form__contacts contacts fieldset">
+                <legend class="visually-hidden">Контакты.</legend>
                 <div class="fieldset__container fieldset__container--contacts wrapper">
-                  <legend class="visually-hidden">Контакты.</legend>
-                  <h3 class="fieldset__title title">Контактная информация:</h3>
-                  <legend class="visually-hidden"></legend>
+                  <h3 class="fieldset__title fieldset__title--contacts title">Контактная информация:</h3>
                   <label class="contacts__label contacts__label--phone contacts-label label" for="phone">
                     <span class="label__name">Контактный телефон*:</span>
-                    <input class="contacts-label__input input" type="tel" id="phone" name="phone"
-                      placeholder="Введите телефон" required>
+                    <input class="contacts-label__input input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      id="phone" name="phone" placeholder="Введите телефон" required>
                   </label>
                   <label class="contacts__label contacts__label--email contacts-label label" for="email">
                     <span class="label__name">Электронная почта*:</span>
@@ -114,8 +114,8 @@
             </div>
             <!-- RADIO -->
             <fieldset class="form__wishes wishes fieldset">
+              <legend class="visually-hidden">Впечатления</legend>
               <div class="fieldset__container fieldset__container--radio wrapper">
-                <legend class="visually-hidden">Впечатления</legend>
                 <h3 class="fieldset__title fieldset__title--grey-line fieldset-title title"> <span
                     class="fieldset-title__description">Ваше Общее
                     впечатление:</span></h3>
@@ -146,8 +146,8 @@
             </fieldset>
             <!-- CHECKBOX -->
             <fieldset class="form__visited visited fieldset">
+              <legend class="visually-hidden">Что посетили?</legend>
               <div class="fieldset__container fieldset__container--checkbox wrapper">
-                <legend class="visually-hidden">Что посетили?</legend>
                 <h3 class="fieldset__title fieldset__title--grey-line fieldset-title title"> <span
                     class="fieldset-title__description">Посещенные
                     достопримечательности:</span></h3>
@@ -177,8 +177,8 @@
             </fieldset>
             <!-- TEXTAREA -->
             <fieldset class="form__comment-in-details comment-in-details fieldset">
+              <legend class="visually-hidden">Подробный комментарий.</legend>
               <div class="fieldset__container fieldset__container--textarea wrapper">
-                <legend class="visually-hidden">Подробный комментарий.</legend>
                 <h3 class="fieldset__title fieldset__title--grey-line fieldset-title title"> <span
                     class="fieldset-title__description">Опишите свои
                     эмоции:</span></h3>
@@ -189,10 +189,11 @@
                 </label>
               </div>
             </fieldset>
-            <div class="fieldset__container fieldset__container--button wrapper">
-              <button class="form__button form-button button" type="submit"><span class="button__description">Отправить
+            <div class="form__button-container button-container wrapper">
+              <button class="button-container__button form-button button" type="submit"><span
+                  class="button__description">Отправить
                   отзыв</span></button>
-              <small class="form__asterisk asterisk">* &#8213; Обязательные поля</small>
+              <small class="button-container__asterisk asterisk">* &#8213; Обязательные поля</small>
             </div>
           </form>
         </div>

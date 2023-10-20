@@ -5,6 +5,7 @@
   align-items: center;
   gap: 16px;
   position: relative;
+  text-align: start;
 
   &:hover {
     &::before {
@@ -31,6 +32,7 @@
     border: none;
     border-radius: 2px;
     flex-shrink: 0;
+    align-self: flex-start;
   }
 
   &::after {
@@ -42,5 +44,7 @@
     height: 19px;
     position: absolute;
     left: 14px;
+    top: 13px;
+    align-self: flex-start;
   }
 }

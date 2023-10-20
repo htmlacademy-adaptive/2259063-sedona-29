@@ -1,0 +1,30 @@
+@use "../global/variables.scss";
+
+.photo-item__wrapper {
+  padding: 0 18px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    position: relative;
+  }
+}
+
+.photo-item__image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.photo-item__name {
+  padding-top: 15px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 22px 20px 15px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 17px 25px;
+  }
+}

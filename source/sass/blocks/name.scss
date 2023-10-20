@@ -1,0 +1,65 @@
+@use "../global/variables.scss";
+
+.name {
+  text-align: start;
+
+
+  @media (min-width: variables.$screen-tablet) {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.name__container {
+  &--like {
+    @media (min-width: variables.$screen-tablet) {
+      padding: 10px 0;
+    }
+  }
+
+  &--name {
+    // @media (min-width: variables.$screen-tablet) {
+    //   max-width: 210px;
+    // }
+
+    @media (min-width: variables.$screen-desktop) {
+      max-width: none;
+    }
+  }
+}
+
+.name__title {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: variables.$screen-desktop) {
+    color: #ffffff;
+    padding-bottom: 4px;
+  }
+}
+
+.name__author {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  padding-bottom: 11px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    color: #ffffff;
+  }
+}

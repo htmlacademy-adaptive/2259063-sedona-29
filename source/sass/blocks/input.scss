@@ -10,6 +10,7 @@
   border: none;
   padding: 16px;
   background-color: #f2f2f2;
+  font-family: variables.$font-ptsans;
   color: #000;
   font-size: 18px;
   font-weight: 700;
@@ -27,6 +28,15 @@
 
   &:focus {
     outline-offset: 2px;
+  }
+
+  &:invalid {
+    outline: 2px solid red;
+    outline-offset: 2px;
+  }
+
+  &:placeholder-shown {
+    outline: none;
   }
 }
 
@@ -54,7 +64,7 @@
 
 .input::placeholder {
   color: rgba(0, 0, 0, 0.3);
-  font-family: "PT Sans", sans-serif;
+  font-family: variables.$font-ptsans;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;

@@ -26,10 +26,6 @@
   flex-direction: column;
   gap: 16px;
 
-  @media (min-width: variables.$screen-tablet) {
-    gap: 0;
-  }
-
   &--full-name {
     @media (min-width: variables.$screen-tablet) {
       padding: 0;
@@ -111,6 +107,11 @@
         position: absolute;
         top: 28%;
       }
+    }
+
+    &--full-name,
+    &--contacts {
+      padding-bottom: 12px;
     }
   }
 }

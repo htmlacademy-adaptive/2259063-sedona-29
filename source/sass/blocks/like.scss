@@ -1,0 +1,57 @@
+@use "../global/variables.scss";
+
+.like {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  align-self: flex-start;
+}
+
+.like__button {
+  border: none;
+  width: 23px;
+  height: 21px;
+  padding: 0;
+  flex-shrink: 0;
+  mask-image: url("../img/stack/sprite.svg#like");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #000000;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  &:focus {
+    outline: 2px solid #000000;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: 0.1s;
+  }
+
+  //  &.added {
+  //   background-color: rgb(0, 128, 0);
+  //   fill-opacity: 1;
+  // }
+  @media (min-width: variables.$screen-desktop) {
+    background-color: #ffffff;
+    opacity: 1;
+  }
+}
+
+.like__value {
+  display: block;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 15px;
+
+  @media (min-width: variables.$screen-desktop) {
+    color: #ffffff;
+  }
+}

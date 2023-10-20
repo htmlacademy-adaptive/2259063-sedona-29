@@ -24,3 +24,18 @@
     }
   }
 }
+
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 22px;
+  gap: 3px;
+
+  @media (min-width: variables.$screen-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+}
