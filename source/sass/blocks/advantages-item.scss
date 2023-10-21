@@ -83,6 +83,11 @@
     &--grey {
       padding: 52px 50px;
     }
+
+    &--blue {
+      padding-top: 25px;
+      gap: 24px;
+    }
   }
 }
 
@@ -109,6 +114,22 @@
 
     @media (min-width: variables.$screen-desktop) {
       padding-bottom: 25px;
+    }
+  }
+
+  &--city {
+    @media (min-width: variables.$screen-desktop) {
+      padding: 0 70px;
+      gap: 11px;
+    }
+  }
+
+  &--bridge {
+    @media (min-width: variables.$screen-desktop) {
+      width: 245px;
+      // padding-top: 22px;
+      padding-bottom: 0;
+      gap: 11px;
     }
   }
 }
