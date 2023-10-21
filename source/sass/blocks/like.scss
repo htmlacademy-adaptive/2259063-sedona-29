@@ -26,12 +26,16 @@
   }
 
   &:focus {
-    outline: 2px solid #000000;
+    transform: scale(1.2);
+    background-color: red;
+    opacity: 1;
   }
 
   &:active {
     opacity: 0.5;
     transition: 0.1s;
+    background-color: #000000;
+    transform: scale(1);
   }
 
   //  &.added {

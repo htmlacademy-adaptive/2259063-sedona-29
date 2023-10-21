@@ -37,6 +37,15 @@
   &--closed-menu {
     display: block;
   }
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .main-nav__button {
