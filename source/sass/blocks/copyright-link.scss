@@ -11,6 +11,11 @@
   margin: 0 auto;
   padding-left: 4px;
 
+  @media (min-width: variables.$screen-tablet) {
+
+    padding-left: 0;
+  }
+
   &:hover {
     color: #81b3d2;
     transition: 0.2s;

@@ -64,7 +64,7 @@
 
   @media (min-width: variables.$screen-tablet) {
     flex-basis: clamp(256px, 50%, 31.25vw);
-    padding: 52px 33px 31px 33px;
+    padding: 52px 33px 27px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,6 +72,10 @@
 
     &--grey {
       padding: 41px 33px;
+    }
+
+    &--blue {
+      padding-top: 46px;
     }
   }
 
@@ -91,10 +95,16 @@
   line-height: 26px;
   padding-bottom: 17px;
 
+  @media (min-width: variables.$screen-tablet) {
+    gap: 17px;
+    padding-bottom: 21px;
+  }
+
   &--grey {
     @media (min-width: variables.$screen-tablet) {
-      padding-bottom: 20px;
+      padding-bottom: 23px;
       width: 120px;
+      gap: 14px;
     }
 
     @media (min-width: variables.$screen-desktop) {

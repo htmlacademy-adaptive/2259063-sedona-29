@@ -9,8 +9,8 @@
   padding: 33px 21px 16px;
 
   @media (min-width: variables.$screen-tablet) {
-    width: 520px;
-    padding-top: 47.5px;
+    width: 530px;
+    padding-top: 48px;
     padding-bottom: 55.5px;
   }
 
@@ -53,14 +53,22 @@
   padding-bottom: 36px;
   padding-right: 2px;
 
-  &--form {
-    padding-bottom: 20px;
-    font-size: clamp(18px, 5vw, 30px);
-  }
+  @media (min-width: variables.$screen-tablet) {
+    white-space: break-spaces;
 
-  &--photo {
-    padding-bottom: 20px;
-    font-size: clamp(18px, 5vw, 30px);
+    &--index {
+      padding-bottom: 30px;
+    }
+
+    &--form {
+      padding-bottom: 20px;
+      font-size: clamp(18px, 5vw, 30px);
+    }
+
+    &--photo {
+      padding-bottom: 20px;
+      font-size: clamp(18px, 5vw, 30px);
+    }
   }
 }
 

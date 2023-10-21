@@ -13,11 +13,23 @@
 
   @media (min-width: variables.$screen-tablet) {
     flex-direction: column;
-    gap: 26px;
+    gap: 0;
     align-items: center;
     text-align: center;
     padding-bottom: 0;
     flex-basis: clamp(256px, 33.333vw, 400px);
+
+    &--motel {
+      gap: 16px;
+    }
+
+    &--food {
+      gap: 14px;
+    }
+
+    &--gifts {
+      gap: 3px;
+    }
   }
 
   &--motel {
@@ -49,7 +61,9 @@
 
       @media (min-width: variables.$screen-tablet) {
         width: 80px;
-        height: 68px;
+        height: 72px;
+        position: relative;
+        top: -2px;
       }
     }
   }
@@ -65,8 +79,8 @@
       flex-shrink: 0;
 
       @media (min-width: variables.$screen-tablet) {
-        width: 66.5px;
-        height: 75px;
+        width: 81.5px;
+        height: 80px;
       }
     }
   }
@@ -79,6 +93,10 @@
   line-height: 26px;
   padding-bottom: 16px;
   padding-top: 8px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 25px;
+  }
 }
 
 .advantages-services-item__container {
@@ -89,4 +107,10 @@
 
 .advantages-services-item__description {
   white-space: break-spaces;
+
+  @media (min-width: variables.$screen-tablet) {
+    &--food {
+      white-space: inherit;
+    }
+  }
 }

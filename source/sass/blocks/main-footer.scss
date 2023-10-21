@@ -11,6 +11,7 @@
   @media (min-width: variables.$screen-tablet) {
     padding-top: 36px;
     padding-bottom: 36px;
+    padding-right: 55px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -28,6 +29,10 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  // @media (min-width: variables.$screen-tablet) {
+  //   margin-right: 4px;
+  // }
 }
 
 .main-footer__list {

@@ -3,4 +3,35 @@
 .text__align {
   display: block;
   white-space: nowrap;
+
+  &--5 {
+    white-space: inherit;
+    display: inline;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    white-space: normal;
+
+    &--1 {
+      display: inline;
+    }
+
+    &--2 {
+      display: inline;
+    }
+
+    &--3 {
+      display: inline;
+    }
+
+    &--4 {
+      display: inline;
+    }
+
+    &--5 {
+      display: block;
+    }
+  }
+
+
 }
