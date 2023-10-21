@@ -6,8 +6,7 @@
 }
 
 .main-title__wrapper {
-  padding-top: 32px;
-  padding-bottom: 16px;
+  padding: 33px 21px 16px;
 
   @media (min-width: variables.$screen-tablet) {
     width: 520px;
@@ -51,7 +50,8 @@
   font-size: clamp(18px, 5vw, 21px);
   font-weight: 700;
   line-height: 26px;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
+  padding-right: 2px;
 
   &--form {
     padding-bottom: 20px;

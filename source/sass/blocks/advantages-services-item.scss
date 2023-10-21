@@ -5,7 +5,7 @@
   display: flex;
   gap: 7px;
   &:not(:last-child) {
-    padding-bottom: 27.5px;
+    padding-bottom: 25px;
     @media (min-width: variables.$screen-tablet) {
       padding-bottom: 0;
     }
@@ -85,4 +85,8 @@
   @media (min-width: variables.$screen-tablet) {
     width: clamp(190px, 24.75vw, 300px);
   }
+}
+
+.advantages-services-item__description {
+  white-space: break-spaces;
 }

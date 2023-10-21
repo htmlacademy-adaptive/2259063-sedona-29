@@ -60,7 +60,7 @@
   background-color: transparent;
   position: absolute;
   top: 17px;
-  right: 20px;
+  right: 21px;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -153,10 +153,10 @@
   }
 
   @media (min-width: variables.$screen-tablet) {
-    flex-basis: min(19.9vw, 240px);
+    flex-basis: min(20vw, 240px);
     &:nth-child(2),
     &:nth-child(6) {
-      margin-right: min(19.9vw, 240px);
+      margin-right: min(20vw, 240px);
     }
   }
 
@@ -178,7 +178,7 @@
   }
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 17px 18px 18px 18px;
+    padding: 18px;
     &:hover {
       opacity: 0.6;
     }
