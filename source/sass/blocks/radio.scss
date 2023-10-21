@@ -3,7 +3,7 @@
 .radio {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 17px;
   position: relative;
 
   &:hover {
@@ -39,7 +39,7 @@
     border-radius: 50%;
     background-color: #333333;
     position: absolute;
-    left: 15px;
+    left: 16px;
     top: 15px;
     display: none;
   }

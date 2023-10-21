@@ -3,12 +3,12 @@
 .wishes-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 15px 30px;
 
   @media (min-width: variables.$screen-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 28px 36px 48px 36px;
+    padding: 28px 36px 50px;
   }
 
   @media (min-width: variables.$screen-desktop) {

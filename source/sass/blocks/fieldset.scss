@@ -27,12 +27,16 @@
   gap: 16px;
 
   &--full-name {
+    padding-bottom: 39px;
+
     @media (min-width: variables.$screen-tablet) {
       padding: 0;
     }
   }
 
   &--contacts {
+    padding-top: 24.5px;
+
     @media (min-width: variables.$screen-tablet) {
       padding: 0;
     }
@@ -63,11 +67,12 @@
   }
 
   &--textarea {
-    padding-bottom: 56px;
+    padding-bottom: 50.5px;
 
     @media (min-width: variables.$screen-tablet) {
       padding: 0;
-      padding-bottom: 48px;
+      padding-bottom: 42px;
+      gap: 0;
     }
   }
 
@@ -114,4 +119,25 @@
       padding-bottom: 12px;
     }
   }
+
+  &--radio {
+    @media (min-width: variables.$screen-tablet) {
+      padding-bottom: 14px;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: variables.$screen-tablet) {
+      padding-bottom: 13px;
+    }
+
+    &::before {
+      @media (min-width: variables.$screen-tablet) {
+        top: 37%
+      }
+
+    }
+  }
+
+
 }

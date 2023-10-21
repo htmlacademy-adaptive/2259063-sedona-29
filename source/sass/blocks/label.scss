@@ -5,4 +5,9 @@
   text-align: start;
   text-transform: uppercase;
   color: #000000;
+  padding-left: 17px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-left: 16px;
+  }
 }

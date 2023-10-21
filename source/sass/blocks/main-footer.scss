@@ -8,6 +8,10 @@
   padding-top: 41px;
   padding-bottom: 33px;
 
+  &--form {
+    padding-top: 32px;
+  }
+
   @media (min-width: variables.$screen-tablet) {
     padding-top: 36px;
     padding-bottom: 36px;

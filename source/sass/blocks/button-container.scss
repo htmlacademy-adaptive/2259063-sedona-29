@@ -2,4 +2,8 @@
 
 .button-container__asterisk {
   margin-left: auto;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 7px;
+  }
 }

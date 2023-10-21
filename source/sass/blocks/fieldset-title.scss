@@ -8,7 +8,13 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    padding: 0 47px;
-    max-width: 366px;
+    padding: 0px 66px;
+    max-width: 403px;
+  }
+
+  &--radio {
+    @media (min-width: variables.$screen-tablet) {
+      white-space: nowrap;
+    }
   }
 }
