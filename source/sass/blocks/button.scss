@@ -31,3 +31,11 @@
     background-color: #e5e5e5;
   }
 }
+
+.button__description {
+  &--index {
+    @media (min-width: variables.$screen-tablet) {
+      font-size: 21px;
+    }
+  }
+}

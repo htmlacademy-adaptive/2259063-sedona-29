@@ -15,7 +15,7 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    width: 526px;
+    width: 529px;
     padding-top: 58px;
     padding-bottom: 44px;
   }
@@ -39,7 +39,12 @@
     padding: 38px 0 36px;
 
     @media (min-width: variables.$screen-tablet) {
-      padding: 66px 0 67px;
+      padding: 66px 0 81px;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding: 98px 0 89px;
+      width: clamp(280px, 59.6vw, 447px);
     }
   }
 }
@@ -52,6 +57,10 @@
   line-height: 26px;
   padding-bottom: 36px;
   padding-right: 2px;
+
+  &--index {
+    white-space: break-spaces;
+  }
 
   &--form {
     padding-bottom: 23px;
@@ -74,7 +83,7 @@
     }
 
     &--photo {
-      padding-bottom: 20px;
+      padding-bottom: 31px;
       font-size: clamp(18px, 5vw, 30px);
     }
   }
@@ -99,5 +108,9 @@
 
   &--photo {
     white-space: break-spaces;
+
+    @media (min-width: variables.$screen-tablet) {
+      white-space: inherit;
+    }
   }
 }

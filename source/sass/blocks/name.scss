@@ -22,7 +22,11 @@
 .name__container {
   &--like {
     @media (min-width: variables.$screen-tablet) {
-      padding: 10px 0;
+      padding: 7px 0;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding: 8px 0;
     }
   }
 
@@ -41,7 +45,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     color: #ffffff;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
   }
 }
 

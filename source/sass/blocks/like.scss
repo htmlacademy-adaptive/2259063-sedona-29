@@ -5,6 +5,10 @@
   align-items: flex-end;
   gap: 14px;
   align-self: flex-start;
+
+  @media (min-width: variables.$screen-tablet) {
+    gap: 10px;
+  }
 }
 
 .like__button {
@@ -53,7 +57,7 @@
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 15px;
+  line-height: 13px;
 
   @media (min-width: variables.$screen-desktop) {
     color: #ffffff;

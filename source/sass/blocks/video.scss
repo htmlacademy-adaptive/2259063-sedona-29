@@ -7,6 +7,10 @@
   color: #000000;
   font-weight: 700;
   line-height: 26px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 32px;
+  }
 }
 
 .video__description {
@@ -14,7 +18,7 @@
   padding: 0 5px 36px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-bottom: 78px;
+    padding-bottom: 88px;
   }
 }
 
@@ -33,6 +37,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     max-width: 800px;
+    padding-bottom: 83px;
   }
 }
 
@@ -50,6 +55,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  @media (min-width: variables.$screen-tablet) {
+    top: 46.5%;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    top: 42.5%;
+  }
 
   &::before {
     content: "";
