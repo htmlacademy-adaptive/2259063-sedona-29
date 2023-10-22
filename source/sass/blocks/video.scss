@@ -1,7 +1,7 @@
 @use "../global/variables.scss";
 
 .video__title {
-  padding-bottom: 30px;
+  padding-bottom: 29px;
   font-size: clamp(18px, 5vw, 30px);
   text-transform: uppercase;
   color: #000000;
@@ -11,7 +11,7 @@
 
 .video__description {
   text-transform: uppercase;
-  padding: 0 5px 38px;
+  padding: 0 5px 36px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 78px;
@@ -38,8 +38,8 @@
 
 .video__button {
   display: block;
-  width: 48px;
-  height: 54px;
+  width: 57px;
+  height: 50px;
   background-image: url("../img/stack/sprite.svg#play_video");
   background-position: center;
   background-repeat: no-repeat;
@@ -55,8 +55,8 @@
     content: "";
     display: none;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     top: 50%;
     left: 39.5%;
     transform: translate(-50%, -50%);
@@ -66,7 +66,7 @@
   }
 
   &:hover {
-    width: calc(48px * 1.2);
+    width: calc(54px * 1.2);
     height: calc(54px * 1.2);
     transition: 0.3s;
   }

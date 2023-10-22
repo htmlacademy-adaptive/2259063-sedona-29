@@ -15,10 +15,11 @@
 .photo-item__image {
   object-fit: cover;
   width: 100%;
+  height: 87.5vw;
 }
 
 .photo-item__name {
-  padding-top: 15px;
+  padding-top: 17px;
 
   @media (min-width: variables.$screen-tablet) {
     padding: 22px 20px 15px;

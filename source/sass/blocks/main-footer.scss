@@ -12,6 +12,10 @@
     padding-top: 32px;
   }
 
+  &--photo {
+    padding-top: 33px;
+  }
+
   @media (min-width: variables.$screen-tablet) {
     padding-top: 36px;
     padding-bottom: 36px;
@@ -33,10 +37,6 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-
-  // @media (min-width: variables.$screen-tablet) {
-  //   margin-right: 4px;
-  // }
 }
 
 .main-footer__list {
