@@ -6,4 +6,9 @@
   font-weight: 700;
   line-height: 26px;
   cursor: pointer;
+
+  @media (min-width: variables.$screen-desktop) {
+    display: block;
+    width: fit-content;
+  }
 }

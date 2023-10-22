@@ -6,6 +6,16 @@
   gap: 17px;
   position: relative;
 
+  @media (min-width: variables.$screen-tablet) {
+    align-items: flex-start;
+    padding-top: 8.5px;
+    text-align: start;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    gap: 16px 18px;
+  }
+
   &:hover {
     &::before {
       background-color: #e5e5e5;
@@ -30,6 +40,11 @@
     border: none;
     background-color: #f2f2f2;
     flex-shrink: 0;
+
+    @media (min-width: variables.$screen-tablet) {
+      position: relative;
+      bottom: 10px;
+    }
   }
 
   &::after {
@@ -42,5 +57,10 @@
     left: 16px;
     top: 15px;
     display: none;
+
+    @media (min-width: variables.$screen-tablet) {
+      left: 15px;
+      top: 13px;
+    }
   }
 }

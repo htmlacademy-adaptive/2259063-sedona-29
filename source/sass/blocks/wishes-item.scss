@@ -4,4 +4,13 @@
   @media (min-width: variables.$screen-tablet) {
     flex-basis: 266px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    flex-basis: 250px;
+    width: fit-content;
+
+    &:nth-child(3) {
+      flex-basis: 240px;
+    }
+  }
 }

@@ -3,15 +3,25 @@
 .wishes-list {
   display: flex;
   flex-direction: column;
-  gap: 15px 30px;
+  gap: 16px 30px;
 
   @media (min-width: variables.$screen-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 28px 36px 50px;
+    gap: 8px 30px;
   }
 
   @media (min-width: variables.$screen-desktop) {
-    gap: 16px 28px;
+    gap: 16px 56px;
   }
 }
+
+
+// .wishes-list__item {
+//   &--complicated {
+//     @media (min-width: variables.$screen-desktop) {
+//       flex-basis: 240px;
+//     }
+//   }
+// }

@@ -50,7 +50,7 @@
     }
 
     @media (min-width: variables.$screen-desktop) {
-      padding-bottom: 56px;
+      padding-bottom: 63px;
     }
   }
 
@@ -62,7 +62,7 @@
     }
 
     @media (min-width: variables.$screen-desktop) {
-      padding-bottom: 56px;
+      padding-bottom: 87px;
     }
   }
 
@@ -123,6 +123,10 @@
   &--radio {
     @media (min-width: variables.$screen-tablet) {
       padding-bottom: 14px;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-bottom: 13px;
     }
   }
 
