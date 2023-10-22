@@ -19,6 +19,8 @@
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 88px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 
