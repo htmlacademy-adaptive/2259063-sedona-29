@@ -4,8 +4,10 @@
   border: none;
   margin: 0;
   padding: 0;
+
   &:not(:last-of-type) {
     border-bottom: 1px solid #e5e5e5;
+
     @media (min-width: variables.$screen-tablet) {
       border-bottom: none;
     }
@@ -13,6 +15,7 @@
 
   &:first-of-type {
     border-top: 1px solid #e5e5e5;
+
     @media (min-width: variables.$screen-tablet) {
       border-top: none;
     }
@@ -102,6 +105,7 @@
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 28px;
+
     &--grey-line {
       &::before {
         content: "";
@@ -137,11 +141,8 @@
 
     &::before {
       @media (min-width: variables.$screen-tablet) {
-        top: 37%
+        top: 37%;
       }
-
     }
   }
-
-
 }

@@ -12,6 +12,7 @@
 
 .contacts__label {
   position: relative;
+
   &::before {
     content: "";
     display: block;
@@ -27,7 +28,7 @@
     &::after {
       content: "";
       display: block;
-      background-image: url(../img/stack/sprite.svg#phone);
+      background-image: url("../img/stack/sprite.svg#phone");
       width: 18px;
       height: 18px;
       background-repeat: no-repeat;
@@ -42,7 +43,7 @@
     &::after {
       content: "";
       display: block;
-      background-image: url(../img/stack/sprite.svg#email);
+      background-image: url("../img/stack/sprite.svg#email");
       width: 18px;
       height: 18px;
       background-repeat: no-repeat;
