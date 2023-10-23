@@ -4,8 +4,10 @@
   text-align: start;
   display: flex;
   gap: 7px;
+
   &:not(:last-child) {
     padding-bottom: 25px;
+
     @media (min-width: variables.$screen-tablet) {
       padding-bottom: 0;
     }
@@ -17,7 +19,7 @@
     align-items: center;
     text-align: center;
     padding-bottom: 0;
-    flex-basis: clamp(256px, 33.333vw, 400px);
+    flex-basis: clamp(256px, 33.33vw, 400px);
 
     &--motel {
       gap: 16px;
@@ -82,7 +84,7 @@
 
       @media (min-width: variables.$screen-desktop) {
         height: 74px;
-        top: 0px;
+        top: 0;
         right: 2px;
       }
     }

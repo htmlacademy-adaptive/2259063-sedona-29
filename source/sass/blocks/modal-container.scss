@@ -8,6 +8,7 @@
   text-align: center;
 
   &--invalid {
+    display: none; //Убрать чтобы проверить модалку с ошибкой
     padding: 45px 42px 35px 41px;
     width: clamp(320px, 52vw, 400px);
 
@@ -17,6 +18,7 @@
   }
 
   &--valid {
+    display: none; //Убрать чтобы проверить модалку без ошибки
     padding: 44px 20px 20px 20px;
     width: clamp(320px, 83vw, 640px);
 

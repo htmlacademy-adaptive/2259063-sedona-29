@@ -3,6 +3,7 @@
 .advantages-item {
   text-align: center;
   text-transform: uppercase;
+
   &--blue {
     .advantages-item__title,
     .advantages-item__description {
@@ -14,7 +15,7 @@
     background-color: #eeeeee;
 
     @media (min-width: variables.$screen-tablet) {
-      flex-basis: clamp(256px, 33.333vw, 400px);
+      flex-basis: clamp(256px, 33.33vw, 400px);
       min-height: 256px;
     }
   }
@@ -138,7 +139,7 @@
   width: 100%;
 
   @media (min-width: variables.$screen-tablet) {
-    width: 68.667vw;
+    width: 68.67vw;
     height: 100%;
   }
 }

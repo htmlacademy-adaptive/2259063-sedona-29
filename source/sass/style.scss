@@ -1,5 +1,4 @@
 // global
-
 @use "global/global.scss";
 @use "global/mixin.scss";
 @use "global/fonts.scss";
@@ -10,9 +9,7 @@
 @use "global/variables.scss";
 @use "global/visually-hidden.scss";
 @use "global/wrapper.scss";
-
 // blocks
-
 @use "blocks/page.scss";
 @use "blocks/main-nav.scss";
 @use "blocks/button.scss";
@@ -58,7 +55,6 @@
 @use "blocks/photo-item.scss";
 @use "blocks/name.scss";
 @use "blocks/like.scss";
-@use "blocks/like-counter.scss";
 @use "blocks/photo-card.scss";
 @use "blocks/video.scss";
 @use "blocks/video-title.scss";
