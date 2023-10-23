@@ -5,7 +5,7 @@
   display: flex;
   gap: 7px;
   &:not(:last-child) {
-    padding-bottom: 27.5px;
+    padding-bottom: 25px;
     @media (min-width: variables.$screen-tablet) {
       padding-bottom: 0;
     }
@@ -13,11 +13,37 @@
 
   @media (min-width: variables.$screen-tablet) {
     flex-direction: column;
-    gap: 26px;
+    gap: 0;
     align-items: center;
     text-align: center;
     padding-bottom: 0;
     flex-basis: clamp(256px, 33.333vw, 400px);
+
+    &--motel {
+      gap: 16px;
+    }
+
+    &--food {
+      gap: 14px;
+    }
+
+    &--gifts {
+      gap: 3px;
+    }
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    &--motel {
+      gap: 20px;
+    }
+
+    &--food {
+      gap: 15px;
+    }
+
+    &--gifts {
+      gap: 16px;
+    }
   }
 
   &--motel {
@@ -49,7 +75,15 @@
 
       @media (min-width: variables.$screen-tablet) {
         width: 80px;
-        height: 68px;
+        height: 72px;
+        position: relative;
+        top: -2px;
+      }
+
+      @media (min-width: variables.$screen-desktop) {
+        height: 74px;
+        top: 0px;
+        right: 2px;
       }
     }
   }
@@ -65,8 +99,16 @@
       flex-shrink: 0;
 
       @media (min-width: variables.$screen-tablet) {
-        width: 66.5px;
-        height: 75px;
+        width: 81.5px;
+        height: 80px;
+      }
+
+      @media (min-width: variables.$screen-desktop) {
+        width: 83.5px;
+        height: 77px;
+        position: relative;
+        right: 2.8px;
+        top: -1px;
       }
     }
   }
@@ -79,10 +121,28 @@
   line-height: 26px;
   padding-bottom: 16px;
   padding-top: 8px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 23px;
+  }
 }
 
 .advantages-services-item__container {
   @media (min-width: variables.$screen-tablet) {
     width: clamp(190px, 24.75vw, 300px);
+  }
+}
+
+.advantages-services-item__description {
+  white-space: break-spaces;
+
+  @media (min-width: variables.$screen-tablet) {
+    &--food {
+      white-space: inherit;
+    }
   }
 }

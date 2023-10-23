@@ -1,0 +1,59 @@
+@use "../global/variables.scss";
+
+.text__align {
+  display: block;
+  white-space: nowrap;
+
+  &--5 {
+    white-space: inherit;
+    display: inline;
+  }
+
+  &--6 {
+    white-space: inherit;
+    display: inline;
+  }
+
+  &--7 {
+    white-space: inherit;
+    display: inline;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    white-space: normal;
+
+    &--1 {
+      display: inline;
+    }
+
+    &--2 {
+      display: inline;
+    }
+
+    &--3 {
+      display: inline;
+    }
+
+    &--4 {
+      display: inline;
+    }
+
+    &--5 {
+      display: block;
+    }
+
+    &--7 {
+      display: block;
+    }
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    &--1 {
+      display: block;
+    }
+
+    &--2 {
+      display: inline;
+    }
+  }
+}

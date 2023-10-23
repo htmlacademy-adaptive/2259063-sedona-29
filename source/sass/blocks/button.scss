@@ -7,8 +7,9 @@
   cursor: pointer;
   display: block;
   padding: 16px;
+  padding-top: 17px;
   color: #ffffff;
-  font-size: 21px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
@@ -28,5 +29,13 @@
 
   &:disabled {
     background-color: #e5e5e5;
+  }
+}
+
+.button__description {
+  &--index {
+    @media (min-width: variables.$screen-tablet) {
+      font-size: 21px;
+    }
   }
 }

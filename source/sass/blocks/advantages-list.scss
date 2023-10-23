@@ -8,3 +8,11 @@
     flex-wrap: wrap;
   }
 }
+
+.advantages-list__item {
+  &:last-child {
+    .advantages-item__wrapper {
+      padding-bottom: 28px;
+    }
+  }
+}

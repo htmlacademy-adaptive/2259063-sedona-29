@@ -21,7 +21,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo main-logo" href="#">
+          <a class="main-nav__logo main-logo" href="index.html">
             <img class="main-logo__image" src="img/main_logo.svg" width="185" height="96"
               alt="Седона. Перейти на главную" />
           </a>
@@ -62,7 +62,7 @@
         <h2 class="visually-hidden">Оставить отзыв.</h2>
         <div class="main-title__wrapper main-title__wrapper--form wrapper">
           <p class="main-title__title main-title__title--form title">Оставьте свой отзыв</p>
-          <p class="main-title__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
+          <p class="main-title__description main-title__description--form description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
             также о посещенных вами достопримечательностях
           </p>
         </div>
@@ -116,8 +116,8 @@
             <fieldset class="form__wishes wishes fieldset">
               <legend class="visually-hidden">Впечатления</legend>
               <div class="fieldset__container fieldset__container--radio wrapper">
-                <h3 class="fieldset__title fieldset__title--grey-line fieldset-title title"> <span
-                    class="fieldset-title__description">Ваше Общее
+                <h3 class="fieldset__title fieldset__title--grey-line fieldset__title--radio fieldset-title title"> <span
+                    class="fieldset-title__description fieldset-title__description--radio">Ваше Общее
                     впечатление:</span></h3>
                 <ul class="wishes__list wishes-list list">
                   <li class="wishes-list__item wishes-item">
@@ -134,7 +134,7 @@
                       <span class="wishes-item-label__name radio">Скорее отрицательное</span>
                     </label>
                   </li>
-                  <li class="wishes-list__item wishes-item">
+                  <li class="wishes-list__item wishes-item wishes-list__item--complicated">
                     <label class="wishes-item__label wishes-item-label" for="complicated">
                       <input class="wishes-item-label__input input visually-hidden" type="radio" value="Не знаю"
                         id="complicated" name="wishes">
@@ -148,7 +148,7 @@
             <fieldset class="form__visited visited fieldset">
               <legend class="visually-hidden">Что посетили?</legend>
               <div class="fieldset__container fieldset__container--checkbox wrapper">
-                <h3 class="fieldset__title fieldset__title--grey-line fieldset-title title"> <span
+                <h3 class="fieldset__title fieldset__title--grey-line fieldset__title--checkbox fieldset-title title"> <span
                     class="fieldset-title__description">Посещенные
                     достопримечательности:</span></h3>
                 <div class="visited__container visited-container">
@@ -184,7 +184,7 @@
                     эмоции:</span></h3>
                 <label class="comment-in-details__label label" for="comment-in-details">
                   <span class="visually-hidden">Напишите комменатрий о своём коте</span>
-                  <textarea class="comment-in-details__input" rows="6" id="comment-in-details" name="comment-in-details"
+                  <textarea class="comment-in-details__input" rows="4" id="comment-in-details" name="comment-in-details"
                     placeholder="Опишите подробно все свои восторги "></textarea>
                 </label>
               </div>
@@ -201,7 +201,7 @@
     </main>
     <!-- Подвал -->
     <footer class="main-footer">
-      <div class="main-footer__wrapper footer-container wrapper">
+      <div class="main-footer__wrapper main-footer__wrapper--form footer-container wrapper">
         <span class="main-footer__hashtag">#visitSEDONA</span>
         <ul class="main-footer__list social-list list">
           <li class="social-list__item">
@@ -222,7 +222,7 @@
             </a>
           </li>
         </ul>
-        <a class="main-footer__copyright-link link copyright-link" href="https://htmlacademy.ru">
+        <a class="main-footer__copyright-link link copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright-link__description description">разработано</span>
           <svg class="copyright-link__logo" aria-hidden="true" focusable="false" width="36" height="36"
             viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">

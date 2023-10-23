@@ -12,6 +12,14 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    flex-basis: 184px;
+    flex-basis: 174px;
+
+    &:nth-child(3) {
+      flex-basis: 157px;
+    }
+
+    &:nth-child(4) {
+      flex-basis: 186px;
+    }
   }
 }

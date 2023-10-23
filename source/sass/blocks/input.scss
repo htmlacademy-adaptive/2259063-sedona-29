@@ -2,6 +2,11 @@
 
 .input[type="number"] {
   appearance: textfield;
+
+  &:focus {
+    outline-offset: 2px;
+    outline: 2px solid #000000;
+  }
 }
 
 .input[type="text"],
@@ -9,6 +14,7 @@
 .input[type="tel"] {
   border: none;
   padding: 16px;
+  padding-left: 17px;
   background-color: #f2f2f2;
   font-family: variables.$font-ptsans;
   color: #000;
@@ -30,13 +36,9 @@
     outline-offset: 2px;
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     outline: 2px solid red;
     outline-offset: 2px;
-  }
-
-  &:placeholder-shown {
-    outline: none;
   }
 }
 
@@ -69,4 +71,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
+}
+
+.input {
+  &:disabled {
+    opacity: 0.3;
+  }
 }

@@ -23,6 +23,10 @@
       transform: translate(-50%, -50%);
     }
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    margin-bottom: 72px;
+  }
 }
 
 .form__button-container {
@@ -38,4 +42,9 @@
     align-items: center;
     padding: 0;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 0 96px;
+  }
+
 }

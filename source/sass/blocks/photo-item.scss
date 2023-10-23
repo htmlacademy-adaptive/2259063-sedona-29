@@ -1,7 +1,7 @@
 @use "../global/variables.scss";
 
 .photo-item__wrapper {
-  padding: 0 18px;
+  padding: 0 20px;
 
   @media (min-width: variables.$screen-tablet) {
     padding: 0;
@@ -18,13 +18,25 @@
 }
 
 .photo-item__name {
-  padding-top: 15px;
+  padding-top: 17px;
+
+  &--bridge {
+    padding-top: 15px;
+  }
+
+
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 22px 20px 15px;
+    padding: 22px 20px 16px;
   }
 
   @media (min-width: variables.$screen-desktop) {
-    padding: 17px 25px;
+    padding: 21px 21px 15px;
+
+    &--small {
+      padding: 20px 19px 18px 25px;
+    }
   }
+
+
 }

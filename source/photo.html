@@ -21,7 +21,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo main-logo" href="#">
+          <a class="main-nav__logo main-logo" href="index.html">
             <img class="main-logo__image" src="img/main_logo.svg" width="185" height="96"
               alt="Седона. Перейти на главную" />
           </a>
@@ -62,7 +62,8 @@
         <div class="main-title__wrapper wrapper main-title__wrapper--photo">
           <h2 class="visually-hidden">Фото и видео.</h2>
           <p class="main-title__title main-title__title--photo title">Фото и видео</p>
-          <p class="main-title__description description">Не можете решиться на путешествие из-за курса? Фотографии
+          <p class="main-title__description main-title__description--photo description">Не можете решиться на
+            путешествие из-за курса? Фотографии
             помогут вам забыть о политике и экономике.
           </p>
         </div>
@@ -89,7 +90,7 @@
                     type="image/jpg" width="648" height="400">
                   <source media="(min-width:320px)"
                     srcset="img/photo.html/photo_1/photo_1_mobile.webp 1x, img/photo.html/photo_1/photo_1_mobile@2x.webp 2x"
-                    type="image/webp" width="320" height="260">
+                    type="image/webp" width="280" height="280">
                   <img class="photo-item__image" loading="lazy" src="img/photo.html/photo_1/photo_1_mobile.jpg"
                     srcset="img/photo.html/photo_1/photo_1_mobile@2x.jpg 2x" width="280" height="280"
                     alt="Неродные просторы.">
@@ -118,13 +119,13 @@
                     type="image/jpg" width="400" height="267">
                   <source media="(min-width:320px)"
                     srcset="img/photo.html/photo_2/photo_2_mobile.webp 1x, img/photo.html/photo_2/photo_2_mobile@2x.webp 2x"
-                    type="image/webp" width="320" height="260">
+                    type="image/webp" width="280" height="280">
                   <img class="photo-item__image photo-item__image--small" loading="lazy"
                     src="img/photo.html/photo_2/photo_2_mobile.jpg"
                     srcset="img/photo.html/photo_2/photo_2_mobile@2x.jpg 2x" width="280" height="280"
                     alt="Местная растительность.">
                 </picture>
-                <div class="photo-item__name name">
+                <div class="photo-item__name photo-item__name--small name">
                   <div class="name__container name__container--name">
                     <h3 class="name__title title">Местная растительность</h3>
                     <p class="name__author description">Автор фото: Сергей</p>
@@ -148,13 +149,13 @@
                     type="image/jpg" width="400" height="267">
                   <source media="(min-width:320px)"
                     srcset="img/photo.html/photo_3/photo_3_mobile.webp 1x, img/photo.html/photo_3/photo_3_mobile@2x.webp 2x"
-                    type="image/webp" width="320" height="260">
+                    type="image/webp" width="280" height="280">
                   <img class="photo-item__image photo-item__image--small" loading="lazy"
                     src="img/photo.html/photo_3/photo_3_mobile.jpg"
                     srcset="img/photo.html/photo_3/photo_3_mobile@2x.jpg 2x" width="280" height="280"
                     alt="Дорога на север.">
                 </picture>
-                <div class="photo-item__name name">
+                <div class="photo-item__name photo-item__name--small name">
                   <div class="name__container name__container--name">
                     <h3 class="name__title title">Дорога на север</h3>
                     <p class="name__author description">Автор фото: Петр</p>
@@ -178,13 +179,13 @@
                     type="image/jpg" width="400" height="267">
                   <source media="(min-width:320px)"
                     srcset="img/photo.html/photo_4/photo_4_mobile.webp 1x, img/photo.html/photo_4/photo_4_mobile@2x.webp 2x"
-                    type="image/webp" width="320" height="260">
+                    type="image/webp" width="280" height="280">
                   <img class="photo-item__image photo-item__image--small" loading="lazy"
                     src="img/photo.html/photo_4/photo_4_mobile.jpg"
                     srcset="img/photo.html/photo_4/photo_4_mobile@2x.jpg 2x" width="280" height="280"
                     alt="Мост дьявола.">
                 </picture>
-                <div class="photo-item__name name">
+                <div class="photo-item__name photo-item__name--small photo-item__name--bridge name">
                   <div class="name__container name__container--name">
                     <h3 class="name__title title">Мост дьявола</h3>
                     <p class="name__author description">Автор фото: Антон</p>
@@ -204,8 +205,8 @@
         <div class="video__wrapper wrapper">
           <h2 class="visually-hidden">Видео.</h2>
           <p class="video__title title">Все еще сомневаетесь?</p>
-          <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не
-            подорожали в очередной раз!
+          <p class="video__description description text">Смотрите видеопрезентацию и скорее за билетами, пока они <span
+              class="text__align text__align--7"> не подорожали в очередной раз!</span>
           </p>
           <div class="video__container">
             <button class="video__button" type="button">
@@ -231,7 +232,7 @@
     </main>
     <!-- Подвал -->
     <footer class="main-footer">
-      <div class="main-footer__wrapper footer-container wrapper">
+      <div class="main-footer__wrapper main-footer__wrapper--photo footer-container wrapper">
         <span class="main-footer__hashtag">#visitSEDONA</span>
         <ul class="main-footer__list social-list list">
           <li class="social-list__item">
@@ -252,7 +253,7 @@
             </a>
           </li>
         </ul>
-        <a class="main-footer__copyright-link link copyright-link" href="https://htmlacademy.ru">
+        <a class="main-footer__copyright-link link copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright-link__description description">разработано</span>
           <svg class="copyright-link__logo" aria-hidden="true" focusable="false" width="36" height="36"
             viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">

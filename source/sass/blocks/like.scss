@@ -5,6 +5,10 @@
   align-items: flex-end;
   gap: 14px;
   align-self: flex-start;
+
+  @media (min-width: variables.$screen-tablet) {
+    gap: 10px;
+  }
 }
 
 .like__button {
@@ -26,12 +30,16 @@
   }
 
   &:focus {
-    outline: 2px solid #000000;
+    transform: scale(1.2);
+    background-color: red;
+    opacity: 1;
   }
 
   &:active {
     opacity: 0.5;
     transition: 0.1s;
+    background-color: #000000;
+    transform: scale(1);
   }
 
   //  &.added {
@@ -49,7 +57,7 @@
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 15px;
+  line-height: 13px;
 
   @media (min-width: variables.$screen-desktop) {
     color: #ffffff;
